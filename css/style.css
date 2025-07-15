@@ -1,3 +1,108 @@
 nav>ul>li>a {
   font-family: "Roboto Medium";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 24px;
+}
+
+header>p {
+  font-family: "Playfair Display SemiBold";
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-size: 86px;
+}
+
+.hero-section>h1 {
+  font-family: "Playfai Display Medium";
+  line-height: 120%;
+  letter-spacing: 0px;
+  font-size: 86px;
+}
+
+.hero-section>p {
+  font-family: "Roboto Medium";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Roboto Bold";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Playfair Display Medium";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 86px;
+}
+
+.biography-section>article>label {
+  font-family: "Roboto Medium";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 18px;
+}
+
+.biography-section>article>blockquote {
+  font-family: "Bitter Regular";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 26px;
+}
+
+figure>figcaption>p {
+  font-family: "Roboto Regular";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+.figCaptionBold,
+.figCaptionSemibold {
+  font-family: "Roboto Bold";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+.figCaptionBold {
+  text-transform: uppercase
+}
+
+.tLink {
+  font-family: "Roboto Bold";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  text-transform: capitalize;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+
+.tLink>a {
+  font-family: "Roboto Regular";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  text-transform: lowercase;
+}
+
+.testimonials-article>blockquote {
+  font-family: "Bitter Regular";
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-size: 32px;
+}
+
+.span-point-types>li {
+  font-family: "Bitter Regular";
+  line-height: 100%;
+  letter-spacing: 0px;  
+  font-size: 34px;
 }

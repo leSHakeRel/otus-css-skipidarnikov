@@ -1,6 +1,6 @@
 /* Playfair Display 600 */
 @font-face {
-  font-family: 'PlayfairDisplay-SemiBold';
+  font-family: 'Playfair Display SemiBold';
   src: url('../fonts/playfairdisplay-semibold.eot'); /* IE 9 Compatibility Mode */
   src: url('../fonts/playfairdisplay-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
     url('../fonts/playfairdisplay-semibold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -22,7 +22,7 @@
 
 /* Playfair Display 500 */
 @font-face {
-	font-family: 'PlayfairDisplay-Medium';
+	font-family: 'Playfair Display Medium';
 	src: url('../fonts/playfairdisplay-medium.eot'); /* IE 9 Compatibility Mode */
 	src: url('../fonts/playfairdisplay-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
 		url('../fonts/playfairdisplay-medium.woff2') format('woff2'), /* Super Modern Browsers */

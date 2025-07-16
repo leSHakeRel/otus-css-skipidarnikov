@@ -1,0 +1,159 @@
+a {
+  color: #000;
+}
+
+address>a, 
+address>a:link, 
+address>a:visited, 
+address>a:hover,
+footer,
+.tLink>a,
+figure>figcaption>p {
+  font-family: "Roboto Regular";
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.biography-section>article>label,
+.hero-section-text>p,
+nav>ul>li>a,
+.footer-text-section {
+  font-family: "Roboto Medium";
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.figCaptionBold,
+.figCaptionSemibold,
+h2,
+.tLink {
+  font-family: "Roboto Bold";
+  letter-spacing: 0%;
+  line-height: 100%;
+}
+
+.biography-section>article>blockquote,
+.testimonials-article>blockquote,
+.span-point-types>li {
+  font-family: "Bitter Regular";
+  line-height: 100%;
+  letter-spacing: 0px;  
+}
+
+.hero-section-text>h1,
+h3 {
+  font-family: "Playfair Display Medium";
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+footer {
+  padding: 70px 20px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 16px;
+}
+
+.footer-text-section {
+  font-size: 18px;
+}
+
+.footer-text-section>p>span {
+  font-family: "Roboto Black";
+  font-size: 24px;
+}
+
+address>a, 
+address>a:link, 
+address>a:visited, 
+address>a:hover {
+  font-size: 16px;
+  text-transform: lowercase;
+  color: #FFF;
+  text-decoration: underline solid #fff;
+  line-height: 26px;
+}
+
+nav>ul>li>a {
+  font-size: 24px;
+}
+
+nav>ul>li>a:hover {
+  text-decoration: underline solid #000;
+}
+
+header>p {
+  font-family: "Playfair Display SemiBold";
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-size: 86px;
+}
+
+.hero-section-text>h1 {
+  font-size: 86px;
+}
+
+.hero-section-text>p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 86px;
+}
+
+.biography-section>article>label {
+  font-size: 18px;
+}
+
+.biography-section>article>blockquote {
+  font-size: 26px;
+}
+
+figure>figcaption>p {
+  font-size: 16px;
+}
+
+.figCaptionBold,
+.figCaptionSemibold {
+  font-size: 16px;
+}
+
+.figCaptionBold {
+  text-transform: uppercase
+}
+
+/* .testimonials-links-section {
+  transform: rotate(-90deg);
+} */
+
+.tLink {
+  font-size: 16px;
+  text-transform: capitalize;
+  transform-origin: top left;
+}
+
+.tLink>a {
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.testimonials-article>blockquote {
+  font-size: 32px;
+}
+
+.span-point-types>li {  
+  font-size: 34px;
+}
+
+.hero-section {
+  background-image: url("../img/inside-weather-Uxqlfigh6oE-unsplash-1.png");
+}
+
+.hero-section-text {
+  padding: 110px 20px;
+  gap: 14px;
+}

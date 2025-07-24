@@ -13,7 +13,7 @@ a {
 .contact:hover,
 .footer,
 .link.lowercase,
-.figureCaption {
+.figure-caption {
   font-family: "Roboto Regular";
   line-height: 100%;
   letter-spacing: 0px;
@@ -28,8 +28,8 @@ a {
   letter-spacing: 0px;
 }
 
-.figureCaption.bold,
-.figureCaption.semibold,
+.figure-caption.bold,
+.figure-caption.semibold,
 .headline,
 .tLink {
   font-family: "Roboto Bold";
@@ -135,16 +135,16 @@ a {
   font-size: 26px;
 }
 
-.figureCaption {
+.figure-caption {
   font-size: 16px;
 }
 
-.figureCaption.bold,
-.figureCaption.semibold {
+.figure-caption.bold,
+.figure-caption.semibold {
   font-size: 16px;
 }
 
-.figureCaption.bold {
+.figure-caption.bold {
   text-transform: uppercase
 }
 

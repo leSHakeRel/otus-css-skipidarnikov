@@ -1,128 +1,150 @@
 a {
   color: #000;
+  font-size: inherit;
+  text-transform: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  line-height: inherit;
 }
 
-address>a, 
-address>a:link, 
-address>a:visited, 
-address>a:hover,
-footer,
-.tLink>a,
-figure>figcaption>p {
+.contact, 
+.contact:link, 
+.contact:visited, 
+.contact:hover,
+.footer,
+.link.lowercase,
+.figure-caption {
   font-family: "Roboto Regular";
   line-height: 100%;
   letter-spacing: 0px;
 }
 
-.biography-section>article>label,
-.hero-section-text>p,
-nav>ul>li>a,
-.footer-text-section {
+.biography-section-label,
+.hero-section-text.paragraph,
+.link.header-item,
+.footer.text-section {
   font-family: "Roboto Medium";
   line-height: 100%;
   letter-spacing: 0px;
 }
 
-.figCaptionBold,
-.figCaptionSemibold,
-h2,
+.figure-caption.bold,
+.figure-caption.semibold,
+.headline,
 .tLink {
   font-family: "Roboto Bold";
   letter-spacing: 0%;
   line-height: 100%;
 }
 
-.biography-section>article>blockquote,
-.testimonials-article>blockquote,
-.span-point-types>li {
+.biography-section.blockquote,
+.testimonials-article.blockquote,
+.span-point-types {
   font-family: "Bitter Regular";
   line-height: 100%;
   letter-spacing: 0px;  
 }
 
-.hero-section-text>h1,
-h3 {
+.hero-section-text.caption,
+.article-head {
   font-family: "Playfair Display Medium";
   line-height: 120%;
   letter-spacing: 0px;
 }
 
-footer {
+.footer {
   padding: 70px 20px;
   background-color: #000;
   color: #FFF;
   font-size: 16px;
 }
 
-.footer-text-section {
+.footer.contact-section,
+.footer.text-section,
+.footer.copyright-section {
+  padding: 0px;
+}
+
+.footer.text-section {
   font-size: 18px;
 }
 
-.footer-text-section>p>span {
+.footer.text-section.span {
   font-family: "Roboto Black";
   font-size: 24px;
+  padding: 0px;
 }
 
-address>a, 
-address>a:link, 
-address>a:visited, 
-address>a:hover {
+.contact, 
+.contact:link, 
+.contact:visited, 
+.contact:hover {
   font-size: 16px;
   text-transform: lowercase;
   color: #FFF;
-  text-decoration: underline solid #fff;
   line-height: 26px;
 }
 
-nav>ul>li>a {
-  font-size: 24px;
+.link.underline {
+  text-decoration: underline solid #fff;
 }
 
-nav>ul>li>a:hover {
+.link.header-item {
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.link.header-item:hover {
   text-decoration: underline solid #000;
 }
 
-header>p {
+.header-title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
   letter-spacing: 0%;
   font-size: 86px;
 }
 
-.hero-section-text>h1 {
+.hero-section-text.caption {
   font-size: 86px;
 }
 
-.hero-section-text>p {
+.hero-section-text.paragraph {
   font-size: 20px;
 }
 
-h2 {
+.hero-section-text.caption,
+.hero-section-text.paragraph {
+  padding: 0px;
+}
+
+.headline {
   font-size: 24px;
 }
 
-h3 {
+.article-head {
   font-size: 86px;
 }
 
-.biography-section>article>label {
+.biography-section-label {
   font-size: 18px;
 }
 
-.biography-section>article>blockquote {
+.biography-section.blockquote {
   font-size: 26px;
 }
 
-figure>figcaption>p {
+.figure-caption {
   font-size: 16px;
 }
 
-.figCaptionBold,
-.figCaptionSemibold {
+.figure-caption.bold,
+.figure-caption.semibold {
   font-size: 16px;
 }
 
-.figCaptionBold {
+.figure-caption.bold {
   text-transform: uppercase
 }
 
@@ -136,16 +158,16 @@ figure>figcaption>p {
   transform-origin: top left;
 }
 
-.tLink>a {
+.link.lowercase {
   font-size: 16px;
   text-transform: lowercase;
 }
 
-.testimonials-article>blockquote {
+.testimonials-article.blockquote {
   font-size: 32px;
 }
 
-.span-point-types>li {  
+.span-point-types {  
   font-size: 34px;
 }
 

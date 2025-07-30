@@ -9,10 +9,10 @@
     <title>Mod Studio</title>
   </head>
   <body>
-    <header>
+    <header class="nav-header flex">
       <p class="header-title">Mod</p>
-      <nav>
-        <ul class="header-nav">
+      <nav class="nav-menu-items gap-20 flex">
+        <ul class="header-nav gap-55 flex">
           <li class="header-nav-item">
             <a class="link header-item" href="#biography">Biography</a>
           </li>
@@ -35,20 +35,22 @@
       <!--logo-->
       <!--добавить картинку в background секции-->
       <section class="hero-section">
-        <section class="hero-section-text">
+        <section class="hero-section-text flex gap-14">
           <h1 class="hero-section-text caption">Mod Studio</h1>
           <p class="hero-section-text paragraph">Modern Web Studio</p>
         </section>
       </section>
       <!--biography-->
-      <section class="biography-section" id="biography">
-        <h2 class="headline">Biography</h2>
-        <img src="img/jared-weiss-P3cB0ynqYBw-unsplash-1.png" alt="Katya Mills biography"/>
-        <article>
+      <section class="biography-section flex space-between" id="biography">
+        <img class="biography-img" src="img/jared-weiss-P3cB0ynqYBw-unsplash-1.png" alt="Katya Mills biography"/>
+        <h2 class="headline rotate-180">Biography</h2>
+        <article class="biography-article flex column gap-36 center">
           <h3 class="article-head">Katya<br/>Mills</h3>
           <label class="biography-section-label">Art Director<br/>Scenography / Styling / Creative Photography / Design</label>
-          <hr>
-          <blockquote class="biography-section blockquote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
+          <section class="biography-quote flex column gap-18">
+            <hr class="small-line">
+            <blockquote class="biography-section blockquote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
+          </section>
         </article>
       </section>
       <!--designers-->

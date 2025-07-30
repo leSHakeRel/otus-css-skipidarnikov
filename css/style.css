@@ -179,8 +179,9 @@ a {
 }
 
 .nav-header {
-  margin: 0px 20px;
-  height: 135px;
+  /* margin: 0px 20px; */
+  padding: 1% 20px;
+  /* height: 135px; */
 }
 
 .flex {
@@ -222,7 +223,7 @@ a {
   background-color: #000;
 }
 
-.header-nav {
+.end {
   justify-content: end;
 }
 
@@ -285,4 +286,12 @@ a {
 
 .biography-section.blockquote {
   padding: 0px;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.message-button {
+  padding: 10px;
 }

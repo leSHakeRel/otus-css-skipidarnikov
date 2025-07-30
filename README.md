@@ -4,7 +4,7 @@
 - [x] Основы HTML, семантичность
 - [x] Типографика
 - [x] Selector priority
-- [ ] Flexbox layout
+- [x] Flexbox layout
 - [ ] Layout: виды
 - [ ] Grid layout
 - [ ] Workshop по сеткам

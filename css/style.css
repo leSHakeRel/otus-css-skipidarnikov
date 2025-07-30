@@ -175,14 +175,11 @@ a {
   background-image: url("../img/inside-weather-Uxqlfigh6oE-unsplash-1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
-
-.hero-section-text {
-  padding: 110px 20px;
+  height: 630px;
 }
 
 .nav-header {
-  margin-left: 20px;
+  margin: 0px 20px;
   height: 135px;
 }
 
@@ -229,14 +226,13 @@ a {
   justify-content: end;
 }
 
-.hero-section-text {
+.hero-section-text.flex {
+  padding: 110px 20px;
   flex-direction: column;
-  /* margin: 110px 20px; */
   align-items: center;
-  /* background-color: #FFF; */
-  justify-content: space-between;
-  /* padding: 0px; */
-  /* margin: 0px; */
+  background-color: #FFF;
+  justify-content: center;
+  width: 48%;
 }
 
 .space-between {
@@ -258,6 +254,10 @@ a {
 
 .center {
   justify-content: center;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .space-evenly {

@@ -5,7 +5,7 @@
 - [x] Типографика
 - [x] Selector priority
 - [x] Flexbox layout
-- [ ] Layout: виды
+- [x] Layout: виды
 - [ ] Grid layout
 - [ ] Workshop по сеткам
 - [ ] Поддержка браузеров, новые технологии и fallbacks

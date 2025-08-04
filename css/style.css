@@ -133,6 +133,7 @@ a {
 
 .biography-section.blockquote {
   font-size: 26px;
+  margin-right: 60px;
 }
 
 .figure-caption {
@@ -300,4 +301,12 @@ a {
 .biography-text {
   width: 39%;
   gap: 36px;
+}
+
+.biography-section.blockquote.line-height-120 {
+  line-height: 120%;
+}
+
+.line-height-133 {
+  line-height: 133%;
 }

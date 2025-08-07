@@ -7,9 +7,9 @@ a {
   line-height: inherit;
 }
 
-.contact, 
-.contact:link, 
-.contact:visited, 
+.contact,
+.contact:link,
+.contact:visited,
 .contact:hover,
 .footer,
 .link.lowercase,
@@ -42,7 +42,7 @@ a {
 .span-point-types {
   font-family: "Bitter Regular";
   line-height: 100%;
-  letter-spacing: 0px;  
+  letter-spacing: 0px;
 }
 
 .hero-section-text.caption,
@@ -55,7 +55,7 @@ a {
 .footer {
   padding: 70px 20px;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -75,13 +75,13 @@ a {
   padding: 0px;
 }
 
-.contact, 
-.contact:link, 
-.contact:visited, 
+.contact,
+.contact:link,
+.contact:visited,
 .contact:hover {
   font-size: 16px;
   text-transform: lowercase;
-  color: #FFF;
+  color: #fff;
   line-height: 26px;
 }
 
@@ -133,6 +133,7 @@ a {
 
 .biography-section.blockquote {
   font-size: 26px;
+  margin-right: 75px;
 }
 
 .figure-caption {
@@ -145,7 +146,7 @@ a {
 }
 
 .figure-caption.bold {
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 /* .testimonials-links-section {
@@ -167,7 +168,7 @@ a {
   font-size: 32px;
 }
 
-.span-point-types {  
+.span-point-types {
   font-size: 34px;
 }
 
@@ -231,7 +232,7 @@ a {
   padding: 110px 20px;
   flex-direction: column;
   align-items: center;
-  background-color: #FFF;
+  background-color: #fff;
   justify-content: center;
   width: 48%;
 }
@@ -266,22 +267,19 @@ a {
 }
 
 .biography-section {
-  align-items: center;
-  padding: 0px 137.5px;
+  padding: 151px 0px 150px 0px;
+  max-width: 1165px;
+  margin: 0 auto;
+  gap: 32px;
 }
 
 .rotate-180 {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-}
-
-.headline {
-  align-self: flex-start;
-  flex-grow: 0.2;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
 }
 
 .biography-article {
-  width: 39%
+  width: 39%;
 }
 
 .biography-section.blockquote {
@@ -294,4 +292,27 @@ a {
 
 .message-button {
   padding: 10px;
+}
+
+.headline-block {
+  flex-grow: 1;
+}
+
+.biography-text {
+  width: 39%;
+  gap: 36px;
+}
+
+.biography-section.blockquote.line-height-120 {
+  line-height: 120%;
+  letter-spacing: -0.6px;
+}
+
+.line-height-133 {
+  line-height: 133%;
+}
+
+.biography-section-label {
+  letter-spacing: -0.1px;
+  line-height: 114%;
 }

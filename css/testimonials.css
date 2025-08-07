@@ -48,6 +48,7 @@
 
 .testimonials.headline.rotate-180 {
   align-self: start;
+  justify-self: start;
 }
 
 .testimonials-article.grid {

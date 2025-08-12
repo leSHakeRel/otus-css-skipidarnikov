@@ -6,7 +6,7 @@
 - [x] Selector priority
 - [x] Flexbox layout
 - [x] Layout: виды
-- [ ] Grid layout
-- [ ] Workshop по сеткам
+- [x] Grid layout
+- [x] Workshop по сеткам
 - [ ] Поддержка браузеров, новые технологии и fallbacks
 - [ ] Введение в media queries

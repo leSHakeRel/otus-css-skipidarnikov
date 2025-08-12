@@ -49,10 +49,11 @@
 .testimonials.headline.rotate-180 {
   align-self: start;
   justify-self: start;
+  padding-right: 10px;
 }
 
 .testimonials-article.grid {
-  grid-template-rows: 50% 50%;
+  /* grid-template-rows: 50% 50%; */
   grid-template-columns: 100%;
   justify-content: center;
   max-width: 47%;

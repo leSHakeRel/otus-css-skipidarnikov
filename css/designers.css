@@ -1,6 +1,6 @@
 .designers-section {
   padding-left: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 143px;
 }
 
 .disigners-section-article {
@@ -8,6 +8,7 @@
   margin: 0 auto;
   align-items: self-start;
   margin-top: 32px;
+  padding-bottom: 7px;
 }
 
 .content-flex-end {
@@ -34,6 +35,6 @@
   align-self: flex-end;
 }
 
-.padding-right-48 {
-  padding-right: 48px;
+.padding-right-81 {
+  padding-right: 81px;
 }

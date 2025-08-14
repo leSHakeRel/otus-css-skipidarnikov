@@ -16,7 +16,7 @@ a {
 .figure-caption {
   font-family: "Roboto Regular";
   line-height: 100%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .biography-section-label,
@@ -25,7 +25,7 @@ a {
 .footer.text-section {
   font-family: "Roboto Medium";
   line-height: 100%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .figure-caption.bold,
@@ -33,7 +33,7 @@ a {
 .headline,
 .tLink {
   font-family: "Roboto Bold";
-  letter-spacing: 0%;
+  letter-spacing: 0;
   line-height: 100%;
 }
 
@@ -42,14 +42,14 @@ a {
 .span-point-types {
   font-family: "Bitter Regular";
   line-height: 100%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .hero-section-text.caption,
 .article-head {
   font-family: "Playfair Display Medium";
   line-height: 120%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .footer {
@@ -92,7 +92,7 @@ a {
 .link.header-item {
   font-size: 24px;
   line-height: 100%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .link.header-item:hover {
@@ -102,7 +102,7 @@ a {
 .header-title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   font-size: 86px;
 }
 
@@ -138,6 +138,7 @@ a {
 
 .figure-caption {
   font-size: 16px;
+  line-height: 117%;
 }
 
 .figure-caption.bold,

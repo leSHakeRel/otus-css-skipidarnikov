@@ -1,0 +1,43 @@
+.strong-points-section {
+  margin-bottom: 150px;
+}
+
+.strong-points-section-container {
+  padding-left: 20px;
+}
+
+.strong-points-section-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+@supports (display: grid) {
+  .strong-points-section-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    overflow-x: auto;
+  }
+}
+
+.headline.strong-points {
+  margin-left: 119px;
+  margin-bottom: 30px;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.height-555-px {
+  height: 555px;
+}
+
+.span-point-types.flex {
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-around;
+}

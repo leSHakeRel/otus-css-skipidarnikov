@@ -1,200 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="min-width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mod Studio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="min-width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Mod Studio</title>
-</head>
-
-<body>
-  <header class="nav-header flex gap-20 end">
-    <h1 class="header-title flex-grow-1">Mod</h1>
-    <nav class="nav-menu-items gap-20 flex">
-      <ul class="header-nav gap-55 flex">
-        <li class="header-nav-item">
-          <a class="link header-item" href="#biography">Biography</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="link header-item" href="#designers">Designers</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="link header-item" href="#testimonials">Testimonials</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="link header-item" href="#strongPoints">Strong points</a>
-        </li>
-      </ul>
-    </nav>
-    <a href="#">
-      <img class="message-button" src="img/icons/Union.svg" alt="alternative text">
-    </a>
-  </header>
-  <main class="flex column">
-    <!--logo-->
-    <!--добавить картинку в background секции-->
-    <section class="hero-section flex center items-center">
-      <section class="hero-section-text flex gap-14">
-        <h1 class="hero-section-text caption">Mod Studio</h1>
-        <p class="hero-section-text paragraph">Modern Web Studio</p>
+  <body>
+    <header class="nav-header flex gap-20 end">
+      <h1 class="header-title flex-grow-1">Mod</h1>
+      <nav class="nav-menu-items gap-20 flex">
+        <ul class="header-nav gap-55 flex">
+          <li class="header-nav-item">
+            <a class="link header-item" href="#biography">Biography</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="link header-item" href="#designers">Designers</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="link header-item" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="link header-item" href="#strongPoints">Strong points</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#">
+        <img
+          class="message-button"
+          src="img/icons/Union.svg"
+          alt="alternative text"
+        />
+      </a>
+    </header>
+    <main class="flex column">
+      <!--logo-->
+      <!--добавить картинку в background секции-->
+      <section class="hero-section flex center items-center">
+        <section class="hero-section-text flex gap-14">
+          <h1 class="hero-section-text caption">Mod Studio</h1>
+          <p class="hero-section-text paragraph">Modern Web Studio</p>
+        </section>
       </section>
-    </section>
-    <!--biography-->
-    <section class="biography-section flex space-between" id="biography">
-      <img class="biography-img" src="img/jared-weiss-P3cB0ynqYBw-unsplash-1.png" alt="Katya Mills biography" />
-      <div class="headline-block flex-grow-1">
-        <h2 class="headline rotate-180">Biography</h2>
-      </div>
-      <div class="biography-text flex center column">
-        <!-- <article class="biography-article flex column gap-36 center"> -->
-        <h3 class="article-head line-height-133">Katya<br />Mills</h3>
-        <label class="biography-section-label">Art Director<br />Scenography / Styling / Creative Photography /
-          Design</label>
-        <div class="biography-quote flex column gap-18">
-          <hr class="small-line">
-          <blockquote class="biography-section blockquote line-height-120">“The more I deal with the work as something
-            that is my own,
-            as something that is personal, the more successful it is.”</blockquote>
+      <!--biography-->
+      <section class="biography-section flex space-between" id="biography">
+        <img
+          class="biography-img"
+          src="img/jared-weiss-P3cB0ynqYBw-unsplash-1.png"
+          alt="Katya Mills biography"
+        />
+        <div class="headline-block flex-grow-1">
+          <h2 class="headline rotate-180">Biography</h2>
         </div>
-        <!-- </article> -->
-      </div>
-    </section>
-    <!--designers-->
-    <section class="designers-section" id="designers">
-      <h2 class="headline designers">Designers</h2>
-      <article class="disigners-section-article flex gap-20 align-items-end">
-        <figure class="flex column content-flex-end align-items-end gap-27 min-w-max-content">
-          <img class="min-w-max-content" src="img/spurwing-agency-r6LceZ3ckpM-unsplash-1.png" alt="Jess Wonder photo" />
-          <figcaption class="align-self-end padding-right-81">
-            <p class="figure-caption">
-              <span class="figure-caption bold">Jess Wonder</span>
-              <br />
-              <span class="figure-caption semibold">From/</span> Be more flower
-              <br />
-              <span class="figure-caption semibold">Skills/</span> Design Strategy / Marketing
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="flex column content-flex-end gap-27 min-w-max-content">
-          <img class="min-w-max-content" src="img/stil-P1jQzyvqfns-unsplash-1.png" alt="Kameron Clein photo" />
-          <figcaption>
-            <p class="figure-caption">
-              <span class="figure-caption bold">Kameron Clein</span>
-              <br />
-              <span class="figure-caption semibold">From/</span> Be more flower
-              <br />
-              <span class="figure-caption semibold">Skills/</span> Design Strategy / Marketing
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="flex column content-flex-end gap-27 min-w-max-content">
-          <img class="min-w-max-content" src="img/stil-_mvSe9q8_n4-unsplash-1.png" alt="LOUISSE RED photo" />
-          <figcaption>
-            <p class="figure-caption">
-              <span class="figure-caption bold">LOUISSE RED</span>
-              <br />
-              <span class="figure-caption semibold">From/</span> Be more flower
-              <br />
-              <span class="figure-caption semibold">Skills/</span> Design Strategy / Marketing
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="flex column content-flex-end gap-27 min-w-max-content">
-          <img class="min-w-max-content" src="img/stil-P1jQzyvqfns-unsplash-1.png" alt="Kameron Clein photo" />
-          <figcaption>
-            <p class="figure-caption">
-              <span class="figure-caption bold">Kameron Clein</span>
-              <br />
-              <span class="figure-caption semibold">From/</span> Be more flower
-              <br />
-              <span class="figure-caption semibold">Skills/</span> Design Strategy / Marketing
-            </p>
-          </figcaption>
-        </figure>
-      </article>
-    </section>
-    <!--Testimonials-->
-    <section class="testimonials-section" id="testimonials">
-      <div class="testimonials grid">
-        <section class="testimonials-links">
-          <section class="testimonials-links-section grid row-gap-70">
-            <p class="tLink rotate-translate-180">
-              <a class="link lowercase" href="www.whitepapers.com"
-                class="testimonialsWhitepapers">www.whitepapers.com</a>
-              <br />
-              <span class="tLink caption">Website</span>
-            </p>
-            <p class="tLink rotate-translate-180">
-              <a class="link lowercase" href="www.whitepapers.com"
-                class="testimonialsWhitepapers">www.whitepapers.com</a>
-              <br />
-              <span class="tLink caption">Creativity</span>
-            </p>
-            <p class="tLink rotate-translate-180">
-              <a class="link lowercase" href="www.whitepapers.com"
-                class="testimonialsWhitepapers">www.whitepapers.com</a>
-              <br />
-              <span class="tLink caption">Creativity</span>
-            </p>
+        <div class="biography-text flex center column">
+          <!-- <article class="biography-article flex column gap-36 center"> -->
+          <h3 class="article-head line-height-133">Katya<br />Mills</h3>
+          <label class="biography-section-label"
+            >Art Director<br />Scenography / Styling / Creative Photography /
+            Design</label
+          >
+          <div class="biography-quote flex column gap-18">
+            <hr class="small-line" />
+            <blockquote class="biography-section blockquote line-height-120">
+              “The more I deal with the work as something that is my own, as
+              something that is personal, the more successful it is.”
+            </blockquote>
+          </div>
+          <!-- </article> -->
+        </div>
+      </section>
+      <!--designers-->
+      <section class="designers-section" id="designers">
+        <h2 class="headline designers">Designers</h2>
+        <article class="disigners-section-article flex gap-20 align-items-end">
+          <figure
+            class="flex column content-flex-end align-items-end gap-27 min-w-max-content"
+          >
+            <img
+              class="min-w-max-content"
+              src="img/spurwing-agency-r6LceZ3ckpM-unsplash-1.png"
+              alt="Jess Wonder photo"
+            />
+            <figcaption class="align-self-end padding-right-81">
+              <p class="figure-caption">
+                <span class="figure-caption bold">Jess Wonder</span>
+                <br />
+                <span class="figure-caption semibold">From/</span> Be more
+                flower
+                <br />
+                <span class="figure-caption semibold">Skills/</span> Design
+                Strategy / Marketing
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column content-flex-end gap-27 min-w-max-content">
+            <img
+              class="min-w-max-content"
+              src="img/stil-P1jQzyvqfns-unsplash-1.png"
+              alt="Kameron Clein photo"
+            />
+            <figcaption>
+              <p class="figure-caption">
+                <span class="figure-caption bold">Kameron Clein</span>
+                <br />
+                <span class="figure-caption semibold">From/</span> Be more
+                flower
+                <br />
+                <span class="figure-caption semibold">Skills/</span> Design
+                Strategy / Marketing
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column content-flex-end gap-27 min-w-max-content">
+            <img
+              class="min-w-max-content"
+              src="img/stil-_mvSe9q8_n4-unsplash-1.png"
+              alt="LOUISSE RED photo"
+            />
+            <figcaption>
+              <p class="figure-caption">
+                <span class="figure-caption bold">LOUISSE RED</span>
+                <br />
+                <span class="figure-caption semibold">From/</span> Be more
+                flower
+                <br />
+                <span class="figure-caption semibold">Skills/</span> Design
+                Strategy / Marketing
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column content-flex-end gap-27 min-w-max-content">
+            <img
+              class="min-w-max-content"
+              src="img/stil-P1jQzyvqfns-unsplash-1.png"
+              alt="Kameron Clein photo"
+            />
+            <figcaption>
+              <p class="figure-caption">
+                <span class="figure-caption bold">Kameron Clein</span>
+                <br />
+                <span class="figure-caption semibold">From/</span> Be more
+                flower
+                <br />
+                <span class="figure-caption semibold">Skills/</span> Design
+                Strategy / Marketing
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      <!--Testimonials-->
+      <section class="testimonials-section" id="testimonials">
+        <div class="testimonials grid">
+          <section class="testimonials-links">
+            <section class="testimonials-links-section grid row-gap-70">
+              <p class="tLink rotate-translate-180">
+                <a
+                  class="link lowercase"
+                  href="www.whitepapers.com"
+                  class="testimonialsWhitepapers"
+                  >www.whitepapers.com</a
+                >
+                <br />
+                <span class="tLink caption">Website</span>
+              </p>
+              <p class="tLink rotate-translate-180">
+                <a
+                  class="link lowercase"
+                  href="www.whitepapers.com"
+                  class="testimonialsWhitepapers"
+                  >www.whitepapers.com</a
+                >
+                <br />
+                <span class="tLink caption">Creativity</span>
+              </p>
+              <p class="tLink rotate-translate-180">
+                <a
+                  class="link lowercase"
+                  href="www.whitepapers.com"
+                  class="testimonialsWhitepapers"
+                  >www.whitepapers.com</a
+                >
+                <br />
+                <span class="tLink caption">Creativity</span>
+              </p>
+            </section>
           </section>
-        </section>
-        <section class="testimonials-img-section">
-          <img class="testimonials-img" src="img/keghan-crossland-ZZxmc66SjfM-unsplash-1.png"
-            alt="Testimonials photo" />
-        </section>
-        <h2 class="testimonials headline rotate-180">Testimonials</h2>
+          <section class="testimonials-img-section">
+            <img
+              class="testimonials-img"
+              src="img/keghan-crossland-ZZxmc66SjfM-unsplash-1.png"
+              alt="Testimonials photo"
+            />
+          </section>
+          <h2 class="testimonials headline rotate-180">Testimonials</h2>
 
-        <div class="testimonials-text-img">
-          <article class="testimonials-article grid">
-            <blockquote class="testimonials-article-blockquote">I just really want to do good work and work with some
-              great
-              people, people who challenge me.</blockquote>
-            <img class="testimonials-article-img" src="img/sinitta-leunen-YaReHIzNdRw-unsplash-1.png"
-              alt="Testimonials smart idea photo" />
-          </article>
+          <div class="testimonials-text-img">
+            <article class="testimonials-article grid">
+              <blockquote class="testimonials-article-blockquote">
+                I just really want to do good work and work with some great
+                people, people who challenge me.
+              </blockquote>
+              <img
+                class="testimonials-article-img"
+                src="img/sinitta-leunen-YaReHIzNdRw-unsplash-1.png"
+                alt="Testimonials smart idea photo"
+              />
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- strong points-->
-    <section class="span-point-section" id="strongPoints">
-      <h2 class="headline">Strong points</h2>
-      <img src="img/dawid-liberadzki-vPFbVB7DPZI-unsplash-1.png" alt="strong point photo" />
-      <img src="img/avery-klein-JaXs8Tk5Iww-unsplash-1.png" alt="strong point photo" />
-      <p>
-      <h3 class="article-head">Strengths</h3>
-      <ul class="span-point-types">
-        <li>Interiors</li>
-        <li>Outdoors</li>
-        <li>Portraits</li>
-        <li>Styling</li>
-        <li>Events</li>
-        <li>Architecture</li>
-        <li>Celebrations</li>
-        <li>Fashion</li>
-        <li>Nature</li>
-      </ul>
-      </p>
-      <img src="img/keghan-crossland-ZZxmc66SjfM-unsplash-1.png" alt="strong point photo" />
-      <img src="img/avery-klein-JaXs8Tk5Iww-unsplash-1.png" alt="strong point photo" />
-    </section>
-  </main>
-  <footer class="footer">
-    <section class="footer contact-section">
-      <address class="contact">
-        <a class="link underline" href="mailto:info@modstudio.com">info@modstudio.com</a>
-        <a class="link underline" href="tel:+79211234567">+7 921 123-45-67</a>
-      </address>
-    </section>
-    <section class="footer text-section">
-      <p>A product of <span class="footer text-section span">MOD</span></p>
-    </section>
-    <section class="footer copyright-section">
-      <p>© 2023 Mod Media. All rights reserved</p>
-    </section>
-  </footer>
-</body>
-
+      </section>
+      <!-- strong points-->
+      <section class="strong-points-section" id="strongPoints">
+        <h2 class="headline strong-points">Strong points</h2>
+        <div class="strong-points-section-container">
+          <img class="min-w-max-content height-100"
+            src="img/dawid-liberadzki-vPFbVB7DPZI-unsplash-1.png"
+            alt="strong point photo"
+          />
+          <img class="min-w-max-content height-100"
+            src="img/avery-klein-JaXs8Tk5Iww-unsplash-1.png"
+            alt="strong point photo"
+          />
+          <div class="flex column">
+            <h3 class="article-head">Strengths</h3>
+            <ul class="span-point-types flex column space-between">
+              <li>Interiors</li>
+              <li>Outdoors</li>
+              <li>Portraits</li>
+              <li>Styling</li>
+              <li>Events</li>
+              <li>Architecture</li>
+              <li>Celebrations</li>
+              <li>Fashion</li>
+              <li>Nature</li>
+            </ul>
+          </div>
+          <img class="min-w-max-content height-555-px"
+            src="img/keghan-crossland-ZZxmc66SjfM-unsplash-1.png"
+            alt="strong point photo"
+          />
+          <img class="min-w-max-content height-100"
+            src="img/avery-klein-JaXs8Tk5Iww-unsplash-1.png"
+            alt="strong point photo"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer flex space-between">
+      <section class="footer contact-section">
+        <address class="contact flex column">
+          <a class="link underline" href="tel:+79211234567">+7 921 123-45-67</a>
+          <a class="link underline" href="mailto:info@modstudio.com"
+            >info@modstudio.com</a
+          >
+        </address>
+      </section>
+      <section class="footer text-section">
+        <p>A product of <span class="footer text-section span">MOD</span></p>
+      </section>
+      <section class="footer copyright-section">
+        <p>© 2023 Mod Media. All rights reserved</p>
+      </section>
+    </footer>
+  </body>
 </html>

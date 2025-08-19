@@ -7,7 +7,7 @@
 - [x] Flexbox layout
 - [x] Layout: виды
 - [x] Grid layout
-- [ ] Workshop по сеткам
+- [x] Workshop по сеткам
 - [ ] Поддержка браузеров, новые технологии и fallbacks
 - [ ] Введение в media queries
 - [ ] Особенности мобильной верстки

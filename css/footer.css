@@ -1,0 +1,20 @@
+.upper-case {
+  text-transform: uppercase;
+}
+
+.footer.text-section {
+  margin: 14px auto;
+  padding-left: 90px;
+}
+
+.footer.copyright-section {
+  margin-top: 17px;
+}
+
+.phone {
+  letter-spacing: -0.35px;
+}
+
+.footer.text-section.span {
+  padding-left: 5px;
+}

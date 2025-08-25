@@ -73,3 +73,14 @@
 		url('../fonts/roboto_black.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/roboto_black.svg#roboto_black') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+
+/* Bitter-300 */
+@font-face {
+	font-family: 'Bitter-Light';
+	src: url('../fonts/bitter-light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bitter-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bitter-light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bitter-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bitter-light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bitter-light.svg#bitter-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}

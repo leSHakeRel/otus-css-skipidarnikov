@@ -84,3 +84,14 @@
 		url('../fonts/bitter-light.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/bitter-light.svg#bitter-light') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+
+/* Playfair Display-400 */
+@font-face {
+	font-family: 'Playfair Display Regular';
+	src: url('../fonts/playfair_display_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/playfair_display_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/playfair_display_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/playfair_display_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/playfair_display_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/playfair_display_regular.svg#playfair_display_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}

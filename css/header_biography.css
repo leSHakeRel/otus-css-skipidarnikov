@@ -21,7 +21,7 @@ a {
 
 .biography-section-label,
 .hero-section-text.paragraph,
-.footer.text-section {
+.footer-text-section {
   font-family: "Roboto Medium";
   line-height: 100%;
   letter-spacing: 0;
@@ -34,11 +34,6 @@ a {
   font-family: "Roboto Bold";
   letter-spacing: 0;
   line-height: 100%;
-}
-
-.testimonials-article-blockquote,
-.span-point-types {
-  font-family: "Bitter Regular";
 }
 
 .biography-section.blockquote,
@@ -60,23 +55,24 @@ a {
 }
 
 .footer {
+  /* display: flex; */
   padding: 70px 20px;
   background-color: #000;
   color: #fff;
   font-size: 16px;
 }
 
-.footer.contact-section,
-.footer.text-section,
-.footer.copyright-section {
+.footer-contact-section,
+.footer-text-section,
+.footer-copyright-section {
   padding: 0px;
 }
 
-.footer.text-section {
+.footer-text-section {
   font-size: 18px;
 }
 
-.footer.text-section.span {
+.footer-text-section-span {
   font-family: "Roboto Black";
   font-size: 24px;
   padding: 0px;
@@ -172,10 +168,6 @@ a {
   font-size: 32px;
 }
 
-.span-point-types {
-  font-size: 34px;
-}
-
 .hero-section {
   background-image: url("../img/inside-weather-Uxqlfigh6oE-unsplash-1.png");
 }
@@ -189,8 +181,8 @@ a {
 
 @media (min-width: 1025px) {
   .link.header-item {
-    font-family: "Bitter Regular";
-    font-size: 40px;
+    font-family: "Roboto Medium";
+    font-size: 24px;
     letter-spacing: 0;
   }
 
@@ -299,7 +291,13 @@ a {
   }
 
   .biography-section {
-  padding: 151px 0px 150px 0px;
+    padding: 151px 0px 150px 0px;
+  }
+
+  .footer.flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -347,8 +345,8 @@ a {
 
   .biography-section {
     display: grid;
-    grid-template-columns: 81% 15%;
-    gap: 30px;
+    grid-template-columns: 83% 17%;
+    row-gap: 30px;
   }
 
   .biography-img {
@@ -421,7 +419,22 @@ a {
   }
 
   .biography-section {
-  padding: 81px 0px 150px 0px;
+    padding: 81px 0px 80px 0px;
+  }
+
+  .footer.flex {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .footer-text-section {
+    order: -1;
+    align-self: flex-end;
+  }
+
+  .headline-block {
+    justify-self: end;
   }
 }
 

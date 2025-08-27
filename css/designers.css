@@ -1,6 +1,5 @@
 .designers-section {
   padding-left: 20px;
-  margin-bottom: 143px;
 }
 
 .designers-section-article {
@@ -52,6 +51,10 @@
   .designers-section-article-figure-img {
     min-width: max-content;
   }
+
+  .designers-section {
+    margin-bottom: 143px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -63,5 +66,9 @@
     max-width: 310px;
     min-height: 440px;
     object-fit: cover;
+  }
+
+  .designers-section {
+    margin-bottom: 80px;
   }
 }

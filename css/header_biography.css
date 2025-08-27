@@ -97,10 +97,6 @@ a {
   letter-spacing: 0;
 }
 
-.link.header-item:hover {
-  text-decoration: underline solid #000;
-}
-
 .header-title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
@@ -298,6 +294,10 @@ a {
   .article-head {
     font-size: 86px;
   }
+
+  .link.header-item:hover {
+    text-decoration: underline solid #000;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -452,6 +452,10 @@ a {
 
   .article-head {
     font-size: 64px;
+  }
+
+  .link.header-item:hover {
+    color: #a07c72;
   }
 }
 

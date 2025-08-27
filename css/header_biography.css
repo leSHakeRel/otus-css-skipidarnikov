@@ -37,8 +37,7 @@ a {
 }
 
 .biography-section.blockquote,
-.testimonials-article-blockquote,
-.span-point-types {
+.testimonials-article-blockquote {
   line-height: 100%;
   letter-spacing: 0;
 }
@@ -56,7 +55,7 @@ a {
 
 .footer {
   /* display: flex; */
-  padding: 70px 20px;
+  /* padding: 70px 20px; */
   background-color: #000;
   color: #fff;
   font-size: 16px;
@@ -118,21 +117,8 @@ a {
   padding: 0px;
 } */
 
-.headline {
-  font-size: 24px;
-}
-
-.article-head {
-  font-size: 86px;
-}
-
 .biography-section-label {
   font-size: 18px;
-}
-
-.biography-section.blockquote {
-  font-size: 26px;
-  margin-right: 75px;
 }
 
 .figure-caption {
@@ -162,10 +148,6 @@ a {
 .link.lowercase {
   font-size: 16px;
   text-transform: lowercase;
-}
-
-.testimonials-article-blockquote {
-  font-size: 32px;
 }
 
 .hero-section {
@@ -299,6 +281,23 @@ a {
     justify-content: space-between;
     align-items: center;
   }
+
+  .headline {
+    font-size: 24px;
+  }
+
+  .biography-section.blockquote {
+    font-size: 26px;
+    margin-right: 75px;
+  }
+
+  .biography-text {
+    gap: 36px;
+  }
+
+  .article-head {
+    font-size: 86px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -375,6 +374,7 @@ a {
 
   .article-head.line-height-133 {
     order: 2;
+    padding-top: 66px;
   }
 
   .biography-section-label {
@@ -435,6 +435,23 @@ a {
 
   .headline-block {
     justify-self: end;
+  }
+
+  .headline {
+    font-size: 18px;
+  }
+
+  .biography-section.blockquote {
+    font-size: 30px;
+    margin-right: 75px;
+  }
+
+  .biography-text {
+    gap: 60px;
+  }
+
+  .article-head {
+    font-size: 64px;
   }
 }
 
@@ -543,10 +560,6 @@ a {
 
 .headline-block {
   flex-grow: 1;
-}
-
-.biography-text {
-  gap: 36px;
 }
 
 .biography-section.blockquote.line-height-120 {

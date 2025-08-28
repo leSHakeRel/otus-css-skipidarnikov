@@ -50,10 +50,10 @@
   .span-point-types {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 13px;
+    gap: 8px;
     justify-items: start;
     /* margin: 0px auto; */
-    margin-left: 16px;
+    /* margin-left: 16px; */
   }
 
   .article-head.mt-m7 {
@@ -63,6 +63,11 @@
 }
 
 @media (min-width: 1025px) {
+  @supports (display: grid) {
+    .span-point-types {
+      margin: 0px auto;
+    }
+  }
   .headline.strong-points {
     margin-left: 139px;
     margin-bottom: 32px;
@@ -100,6 +105,13 @@
 }
 
 @media (max-width: 1024px) {
+  @supports (display: grid) {
+    .span-point-types {
+      row-gap: 13px;
+      margin-left: 16px;
+    }
+  }
+
   .strong-points-section-strengths {
     order: -1;
   }
@@ -110,7 +122,6 @@
 
   .strong-points-section {
     padding-left: 17px;
-    padding-right: 20px;
   }
 
   .strong-points-section-strengths {
@@ -144,5 +155,11 @@
 
   .span-point-types {
     letter-spacing: -0.7px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .strong-points-section {
+    padding-right: 20px;
   }
 }

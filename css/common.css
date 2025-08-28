@@ -1,0 +1,65 @@
+.rotate-180 {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.line-height-133 {
+  line-height: 133%;
+}
+
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.end {
+  justify-content: end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.gap-18 {
+  gap: 18px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-55 {
+  gap: 55px;
+}
+
+.gap-14 {
+  gap: 14px;
+}
+
+.gap-36 {
+  gap: 36px;
+}
+
+.flex {
+  display: flex;
+}

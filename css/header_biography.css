@@ -1,3 +1,9 @@
+.nav-header {
+  /* margin: 0px 20px; */
+  padding: 1% 20px;
+  /* height: 135px; */
+}
+
 a {
   color: #000;
   font-size: inherit;
@@ -168,7 +174,10 @@ a {
   }
 
   .hero-section {
-    background-image: url("../img/inside_weather_desktop.png");
+    background-image: image-set(
+      "../img/inside_weather_desktop.png" 1x,
+      "../img/inside_weather_desktop@2x.png"
+    );
   }
 
   .link.header-item {
@@ -345,10 +354,6 @@ a {
     row-gap: 28px;
     justify-content: space-around;
   } */
-
-  .hero-section {
-    background-image: url("../img/inside_weather_tablet.png");
-  }
 
   .link.header-item {
     font-family: "Bitter Regular";
@@ -532,9 +537,23 @@ a {
     row-gap: 28px;
     justify-content: space-around;
   }
+
+  .hero-section {
+    background-image: image-set(
+      "../img/inside_weather_tablet.png" 1x,
+      "../img/inside_weather_tablet@2x.png"
+    );
+  }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
+  .hero-section {
+    background-image: image-set(
+      "../img/inside_weather_mobile.png" 1x,
+      "../img/inside_weather_mobile@2x.png"
+    );
+  }
+
   .biography-section {
     display: grid;
     grid-template-rows: 124px 228px 111px 407px;
@@ -542,12 +561,18 @@ a {
     row-gap: 28px;
     justify-content: space-around;
   }
-}
 
-.nav-header {
-  /* margin: 0px 20px; */
-  padding: 1% 20px;
-  /* height: 135px; */
+  .nav-header {
+    padding: 1% 7%;
+  }
+ 
+  .headline.headline-block-text {
+    margin-right: 10px;
+  }
+
+  .biography-section-blockquote {    
+    max-width: 100%;
+  }
 }
 
 .nav-header,

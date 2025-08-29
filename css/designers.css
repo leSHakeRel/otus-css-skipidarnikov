@@ -77,3 +77,9 @@
     padding-left: 15px;
   }
 }
+
+@media (max-width: 450px){
+  .designers-section {
+    margin-bottom: 72px;
+  }
+}

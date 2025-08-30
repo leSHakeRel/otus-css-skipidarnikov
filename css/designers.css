@@ -1,7 +1,3 @@
-.designers-section {
-  padding-left: 20px;
-}
-
 .designers-section-article {
   overflow-x: auto;
   margin: 0 auto;
@@ -35,6 +31,10 @@
 }
 
 @media (min-width: 1025px) {
+  .designers-section {
+    padding-left: 20px;
+  }
+
   .headline.designers {
     margin-left: 119px;
   }
@@ -43,6 +43,10 @@
     align-self: flex-end;
     padding-right: 81px;
   }
+
+   .designers-section-article-caption-nonfirst {
+    align-self: flex-start;
+   }
 
   .designers-section-article-figure {
     align-items: flex-end;
@@ -69,6 +73,13 @@
   }
 
   .designers-section {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 450px){
+  .designers-section {
+    margin-bottom: 72px;
   }
 }

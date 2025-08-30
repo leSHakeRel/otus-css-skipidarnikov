@@ -59,35 +59,39 @@
       <section class="biography-section" id="biography">
         <img
           class="biography-img"
-          src="img/jared-weiss-P3cB0ynqYBw-unsplash-1.png"
+          src="img/jared_weiss.png"
           alt="Katya Mills biography"
         />
         <div class="headline-block">
           <h2 class="headline headline-block-text">Biography</h2>
         </div>
-        <div class="biography-text flex center column">
-          <!-- <article class="biography-article flex column gap-36 center"> -->
-          <h3 class="article-head line-height-133">
-            <span class="tablet-show">-</span>Katya Mills
-          </h3>
-          <label class="biography-section-label">
-            Art Director
-            <ul class="biography-section-label-list">
-              <li class="biography-section-label-list-item no_bullet">Scenography</li>
-              <li class="biography-section-label-list-item">Styling</li>
-              <li class="biography-section-label-list-item">Creative Photography</li>
-              <li class="biography-section-label-list-item">Design</li>
-            </ul>
-          </label>
-          <div class="biography-quote">
-            <hr class="small-line tablet-hide" />
-            <blockquote class="biography-section blockquote line-height-120">
-              “The more I deal with the work as something that is my own, as
-              something that is personal, the more successful it is.”
-            </blockquote>
-          </div>
-          <!-- </article> -->
+        <!-- <div class="biography-text flex center column"> -->
+        <!-- <article class="biography-article flex column gap-36 center"> -->
+        <h3 class="article-head line-height-133">
+          <span class="tablet-show">-</span>Katya Mills
+        </h3>
+        <label class="biography-section-label">
+          Art Director
+          <ul class="biography-section-label-list">
+            <li class="biography-section-label-list-item no_bullet">
+              Scenography
+            </li>
+            <li class="biography-section-label-list-item">Styling</li>
+            <li class="biography-section-label-list-item">
+              Creative Photography
+            </li>
+            <li class="biography-section-label-list-item">Design</li>
+          </ul>
+        </label>
+        <div class="biography-quote">
+          <hr class="small-line tablet-hide" />
+          <blockquote class="biography-section-blockquote line-height-120">
+            “The more I deal with the work as something that is my own, as
+            something that is personal, the more successful it is.”
+          </blockquote>
         </div>
+        <!-- </article> -->
+        <!-- </div> -->
       </section>
       <!--designers-->
       <section class="designers-section" id="designers">
@@ -96,11 +100,22 @@
           <figure
             class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
           >
-            <img
-              class="designers-section-article-figure-img"
-              src="img/spurwing-agency-r6LceZ3ckpM-unsplash-1.png"
-              alt="Jess Wonder photo"
-            />
+            <picture>
+              <source
+                srcset="img/spurwing_agency_small.png,
+                img/spurwing_agency_small@2x.png 2x"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="img/spurwing_agency.png,
+                img/spurwing_agency@2x.png 2x"
+              />
+              <img
+                class="designers-section-article-figure-img"
+                src="img/spurwing_agency.png"
+                alt="Jess Wonder photo"
+              />
+            </picture>
             <figcaption class="designers-section-article-caption">
               <p class="figure-caption">
                 <span class="figure-caption bold">Jess Wonder</span>
@@ -113,13 +128,26 @@
               </p>
             </figcaption>
           </figure>
-          <figure class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content">
+          <figure
+            class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
+          >
+          <picture>
+            <source
+                srcset="img/stil_1_small.png,
+                img/stil_1_small@2x.png 2x"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="img/stil_1_small.png,
+                img/stil_1_small@2x.png 2x"
+              />
             <img
               class="designers-section-article-figure-img"
-              src="img/stil-P1jQzyvqfns-unsplash-1.png"
+              src="img/stil_1_small.png"
               alt="Kameron Clein photo"
             />
-            <figcaption>
+            </picture>
+            <figcaption class="designers-section-article-caption-nonfirst">
               <p class="figure-caption">
                 <span class="figure-caption bold">Kameron Clein</span>
                 <br />
@@ -131,13 +159,15 @@
               </p>
             </figcaption>
           </figure>
-          <figure class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content">
+          <figure
+            class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
+          >
             <img
               class="designers-section-article-figure-img"
-              src="img/stil-_mvSe9q8_n4-unsplash-1.png"
+              src="img/stil_2_small.png"
               alt="LOUISSE RED photo"
             />
-            <figcaption>
+            <figcaption class="designers-section-article-caption-nonfirst">
               <p class="figure-caption">
                 <span class="figure-caption bold">LOUISSE RED</span>
                 <br />
@@ -149,13 +179,15 @@
               </p>
             </figcaption>
           </figure>
-          <figure class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content">
+          <figure
+            class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
+          >
             <img
               class="designers-section-article-figure-img"
-              src="img/stil-P1jQzyvqfns-unsplash-1.png"
+              src="img/stil_1_small.png"
               alt="Kameron Clein photo"
             />
-            <figcaption>
+            <figcaption class="designers-section-article-caption-nonfirst">
               <p class="figure-caption">
                 <span class="figure-caption bold">Kameron Clein</span>
                 <br />
@@ -173,7 +205,7 @@
       <section class="testimonials-section" id="testimonials">
         <div class="testimonials grid">
           <section class="testimonials-links">
-            <section class="testimonials-links-section grid row-gap-70">
+            <section class="testimonials-links-section">
               <p class="tLink">
                 <a
                   class="link lowercase"

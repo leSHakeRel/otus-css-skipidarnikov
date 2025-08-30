@@ -18,3 +18,22 @@
 .footer.text-section.span {
   padding-left: 5px;
 }
+
+@media (min-width: 1025px) {
+  .footer {
+    /* display: flex; */
+    padding: 70px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    /* display: flex; */
+    padding: 47px 17px;
+  }
+
+  .footer-contact-section,
+  .footer-copyright-section {
+    padding-top: 6px;
+  }
+}

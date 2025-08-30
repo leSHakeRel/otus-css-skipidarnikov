@@ -21,8 +21,7 @@ a {
 
 .biography-section-label,
 .hero-section-text.paragraph,
-.link.header-item,
-.footer.text-section {
+.footer-text-section {
   font-family: "Roboto Medium";
   line-height: 100%;
   letter-spacing: 0;
@@ -38,9 +37,7 @@ a {
 }
 
 .biography-section.blockquote,
-.testimonials-article-blockquote,
-.span-point-types {
-  font-family: "Bitter Regular";
+.testimonials-article-blockquote {
   line-height: 100%;
   letter-spacing: 0;
 }
@@ -48,28 +45,33 @@ a {
 .hero-section-text.caption,
 .article-head {
   font-family: "Playfair Display Medium";
+}
+
+.hero-section-text.caption,
+.article-head {
   line-height: 120%;
   letter-spacing: 0;
 }
 
 .footer {
-  padding: 70px 20px;
+  /* display: flex; */
+  /* padding: 70px 20px; */
   background-color: #000;
   color: #fff;
   font-size: 16px;
 }
 
-.footer.contact-section,
-.footer.text-section,
-.footer.copyright-section {
+.footer-contact-section,
+.footer-text-section,
+.footer-copyright-section {
   padding: 0px;
 }
 
-.footer.text-section {
+.footer-text-section {
   font-size: 18px;
 }
 
-.footer.text-section.span {
+.footer-text-section-span {
   font-family: "Roboto Black";
   font-size: 24px;
   padding: 0px;
@@ -95,10 +97,6 @@ a {
   letter-spacing: 0;
 }
 
-.link.header-item:hover {
-  text-decoration: underline solid #000;
-}
-
 .header-title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
@@ -110,30 +108,13 @@ a {
   font-size: 86px;
 }
 
-.hero-section-text.paragraph {
-  font-size: 20px;
-}
-
 /* .hero-section-text.caption,
 .hero-section-text.paragraph {
   padding: 0px;
 } */
 
-.headline {
-  font-size: 24px;
-}
-
-.article-head {
-  font-size: 86px;
-}
-
 .biography-section-label {
   font-size: 18px;
-}
-
-.biography-section.blockquote {
-  font-size: 26px;
-  margin-right: 75px;
 }
 
 .figure-caption {
@@ -165,25 +146,327 @@ a {
   text-transform: lowercase;
 }
 
-.testimonials-article-blockquote {
-  font-size: 32px;
-}
-
-.span-point-types {
-  font-size: 34px;
-}
-
 .hero-section {
   background-image: url("../img/inside-weather-Uxqlfigh6oE-unsplash-1.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 630px;
+}
+
+.hero-section-text.flex {
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+}
+
+@media (min-width: 1025px) {
+  .link.header-item {
+    font-family: "Roboto Medium";
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+
+  .hero-section {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 630px;
+    align-items: center;
+  }
+
+  .hero-section-text.flex {
+    padding: 110px 20px;
+    width: 48%;
+  }
+
+  .tablet-hide {
+    display: inline;
+  }
+
+  .tablet-show {
+    display: none;
+  }
+
+  .nav-header {
+    justify-content: end;
+  }
+
+  .biography-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .biography-img {
+    width: 49%;
+  }
+
+  .headline-block {
+    flex-grow: 1;
+  }
+
+  .headline-block-text {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+  }
+
+  .biography-text {
+    width: 40%;
+    padding-left: 10px;
+  }
+
+  .article-head.line-height-133 {
+    max-width: 80%;
+  }
+
+  .biography-section-label-list-item {
+    /* display: inline; */
+  }
+
+  .biography-section-label-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .biography-section-label-list,
+  .biography-section-label-list-item {
+    list-style-position: outside;
+    list-style-type: "/";
+  }
+
+  .biography-section-label-list-item {
+    padding-left: 4px;
+  }
+
+  .no_bullet {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .biography-section.blockquote {
+    font-family: "Bitter Regular";
+  }
+
+  .article-head.line-height-133 {
+    font-family: "Playfair Display Medium";
+  }
+
+  .biography-quote {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .header-nav {
+    white-space: nowrap;
+  }
+
+  .message-button {
+    padding: 10px;
+  }
+
+  .hero-section-text.paragraph {
+    font-size: 20px;
+  }
+
+  .biography-section {
+    padding: 151px 0px 150px 0px;
+  }
+
+  .footer.flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headline {
+    font-size: 24px;
+  }
+
+  .biography-section.blockquote {
+    font-size: 26px;
+    margin-right: 75px;
+  }
+
+  .biography-text {
+    gap: 36px;
+  }
+
+  .article-head {
+    font-size: 86px;
+  }
+
+  .link.header-item:hover {
+    text-decoration: underline solid #000;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link.header-item {
+    font-family: "Bitter Regular";
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+
+  .hero-section {
+    background-repeat: repeat;
+    /* background-position: 0% 100%; */
+    background-size: 84% 48%;
+    height: 685px;
+  }
+
+  .hero-section-text.flex {
+    width: 100%;
+    height: 45%;
+  }
+
+  .tablet-hide {
+    display: none;
+  }
+
+  .tablet-show {
+    display: inline;
+  }
+
+  .header-nav.flex {
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .nav-menu-items,
+  .header-nav {
+    width: 100%;
+  }
+
+  .header-nav-item {
+    /* min-width: 92px; */
+  }
+
+  .biography-section {
+    display: grid;
+    grid-template-columns: 83% 17%;
+    row-gap: 30px;
+  }
+
+  .biography-img {
+    order: 3;
+    grid-column: 1 / -1;
+    max-height: 400px;
+    width: 100%;
+  }
+
+  .headline-block {
+    order: -1;
+    grid-column: -1 / -2;
+    padding-right: 14px;
+  }
+
+  .headline-block-text {
+  }
+
+  .biography-text {
+    grid-column: 1;
+    order: -1;
+    grid-row: 1;
+    width: 100%;
+    padding-left: 14px;
+  }
+
+  .article-head.line-height-133 {
+    order: 2;
+    padding-top: 66px;
+  }
+
+  .biography-section-label {
+    order: 0;
+  }
+
+  .biography-section-label-list,
+  .biography-section-label-list-item {
+    /* list-style-image: none; */
+    list-style-position: outside;
+    list-style-type: "-";
+  }
+
+  .biography-section-label-list {
+    margin-left: 8px;
+  }
+
+  .biography-section-label-list-item {
+    padding-left: 4px;
+  }
+
+  .biography-section.blockquote {
+    font-family: "Bitter-Light";
+    display: block;
+    margin: 0px;
+    max-width: 75%;
+    text-align: start;
+  }
+
+  .article-head.line-height-133,
+  .hero-section-text.caption {
+    font-family: "Playfair Display Regular";
+  }
+
+  .hero-section-text.caption {
+    font-size: 70px;
+    margin-top: -24px;
+  }
+
+  .hero-section-text.paragraph {
+    font-size: 18px;
+  }
+
+  .biography-section {
+    padding: 81px 0px 80px 0px;
+  }
+
+  .footer.flex {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .footer-text-section {
+    order: -1;
+    align-self: flex-end;
+  }
+
+  .headline-block {
+    justify-self: end;
+  }
+
+  .headline {
+    font-size: 18px;
+  }
+
+  .biography-section.blockquote {
+    font-size: 30px;
+    margin-right: 75px;
+  }
+
+  .biography-text {
+    gap: 60px;
+  }
+
+  .article-head {
+    font-size: 64px;
+  }
+
+  .link.header-item:hover {
+    color: #a07c72;
+  }
 }
 
 .nav-header {
   /* margin: 0px 20px; */
   padding: 1% 20px;
   /* height: 135px; */
+}
+
+.nav-header.flex {
+  height: 82px;
 }
 
 .flex {
@@ -229,15 +512,6 @@ a {
   justify-content: end;
 }
 
-.hero-section-text.flex {
-  padding: 110px 20px;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  justify-content: center;
-  width: 48%;
-}
-
 .space-between {
   justify-content: space-between;
 }
@@ -251,7 +525,6 @@ a {
 }
 
 .biography-img {
-  width: 49%;
   object-fit: cover;
 }
 
@@ -268,10 +541,8 @@ a {
 }
 
 .biography-section {
-  padding: 151px 0px 150px 0px;
   max-width: 1165px;
   margin: 0 auto;
-  gap: 32px;
 }
 
 .rotate-180 {
@@ -291,17 +562,8 @@ a {
   flex-grow: 1;
 }
 
-.message-button {
-  padding: 10px;
-}
-
 .headline-block {
   flex-grow: 1;
-}
-
-.biography-text {
-  width: 39%;
-  gap: 36px;
 }
 
 .biography-section.blockquote.line-height-120 {

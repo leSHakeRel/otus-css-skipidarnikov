@@ -1,16 +1,12 @@
-.strong-points-section {
-  margin-bottom: 150px;
-}
-
-.strong-points-section-container {
-  padding-left: 20px;
-}
-
 .strong-points-section-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
   overflow-x: auto;
+}
+
+.span-point-types {
+  line-height: 100%;
 }
 
 @supports (display: grid) {
@@ -22,17 +18,8 @@
   }
 }
 
-.headline.strong-points {
-  margin-left: 139px;
-  margin-bottom: 32px;
-}
-
 .height-100 {
   height: 100%;
-}
-
-.height-555-px {
-  height: 555px;
 }
 
 .span-point-types.flex {
@@ -41,10 +28,6 @@
   height: 100%;
   justify-content: space-around;
   margin-left: -8px;
-}
-
-.strong-points-section-strengths {
-  margin: 0px 38px;
 }
 
 .mt-m7 {
@@ -69,6 +52,97 @@
     grid-template-columns: 1fr;
     gap: 13px;
     justify-items: start;
-    margin: 0px auto;
+    /* margin: 0px auto; */
+    margin-left: 16px;
+  }
+
+  .article-head.mt-m7 {
+    font-family: "Playfair Display Medium";
+    font-size: 86px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .headline.strong-points {
+    margin-left: 139px;
+    margin-bottom: 32px;
+  }
+
+  .strong-points-section-strengths {
+    margin: 0px 38px;
+  }
+
+  .strong-points-section-container {
+    padding-left: 20px;
+  }
+
+  .span-point-types {
+    font-family: "Bitter Regular";
+    font-size: 34px;
+  }
+
+  .strong-points-section-img {
+    min-width: max-content;
+    height: 100%;
+  }
+
+  .height-555-px {
+    height: 555px;
+  }
+
+  .strong-points-section {
+    margin-bottom: 150px;
+  }
+
+  .span-point-types {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .strong-points-section-strengths {
+    order: -1;
+  }
+
+  .headline.strong-points {
+    margin-bottom: 30px;
+  }
+
+  .strong-points-section {
+    padding-left: 17px;
+    padding-right: 20px;
+  }
+
+  .strong-points-section-strengths {
+    margin: 0px 0px;
+  }
+
+  .strong-points-section-container {
+    padding-left: 0px;
+  }
+
+  .article-head.mt-m7 {
+    font-family: "Playfair Display Regular";
+    font-size: 46px;
+  }
+
+  .span-point-types {
+    font-family: "Bitter Regular";
+    font-size: 24px;
+  }
+
+  .strong-points-section-img {
+    max-width: 310px;
+    min-height: 450px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+
+  .strong-points-section {
+    margin-bottom: 80px;
+  }
+
+  .span-point-types {
+    letter-spacing: -0.7px;
   }
 }

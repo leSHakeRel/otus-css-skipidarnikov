@@ -11,30 +11,30 @@
 
   <body>
     <header class="nav-header flex gap-20">
-      <h1 class="header-title flex-grow-1 tablet-hide">Mod</h1>
-      <nav class="nav-menu-items gap-20 flex">
-        <ul class="header-nav gap-55 flex">
-          <li class="header-nav-item">
-            <a class="link header-item" href="#biography"
+      <h1 class="nav-header__title flex-grow-1 tablet-hide">Mod</h1>
+      <nav class="nav-header__nav gap-20 flex">
+        <ul class="menu-list gap-55 flex">
+          <li class="menu-list__item">
+            <a class="link menu-list__link" href="#biography"
               >B<div class="tablet-hide">iography</div></a
             >
           </li>
-          <li class="header-nav-item">
-            <a class="link header-item" href="#designers"
+          <li class="menu-list__item">
+            <a class="link menu-list__link" href="#designers"
               >D<div class="tablet-hide">esigners</div></a
             >
           </li>
-          <li class="header-nav-item">
-            <a class="link header-item" href="#testimonials"
+          <li class="menu-list__item">
+            <a class="link menu-list__link" href="#testimonials"
               >T<div class="tablet-hide">estimonials</div></a
             >
           </li>
-          <li class="header-nav-item">
-            <a class="link header-item" href="#strongPoints"
+          <li class="menu-list__item">
+            <a class="link menu-list__link" href="#strongPoints"
               >S<div class="tablet-hide">trong points</div></a
             >
           </li>
-          <li class="header-nav-item">
+          <li class="menu-list__item">
             <a href="#">
               <img
                 class="message-button"
@@ -50,42 +50,42 @@
       <!--logo-->
       <!--добавить картинку в background секции-->
       <section class="hero-section flex center">
-        <section class="hero-section-text flex gap-14">
-          <h1 class="hero-section-text caption">Mod Studio</h1>
-          <p class="hero-section-text paragraph">Modern Web Studio</p>
+        <section class="hero-section__text">
+          <h1 class="hero-section__caption">Mod Studio</h1>
+          <p class="hero-section__paragraph">Modern Web Studio</p>
         </section>
       </section>
       <!--biography-->
       <section class="biography-section" id="biography">
         <img
-          class="biography-img"
+          class="biography-section__img"
           src="img/jared_weiss.png"
           alt="Katya Mills biography"
         />
-        <div class="headline-block">
-          <h2 class="headline headline-block-text">Biography</h2>
+        <div class="biography-section__head-div">
+          <h2 class="headline biography-section__headline">Biography</h2>
         </div>
         <!-- <div class="biography-text flex center column"> -->
         <!-- <article class="biography-article flex column gap-36 center"> -->
-        <h3 class="article-head line-height-133">
+        <h3 class="biography-section__article line-height-133">
           <span class="tablet-show">-</span>Katya Mills
         </h3>
-        <label class="biography-section-label">
+        <label class="biography-section__label">
           Art Director
-          <ul class="biography-section-label-list">
-            <li class="biography-section-label-list-item no_bullet">
+          <ul class="biography-section__list">
+            <li class="biography-section__item no_bullet">
               Scenography
             </li>
-            <li class="biography-section-label-list-item">Styling</li>
-            <li class="biography-section-label-list-item">
+            <li class="biography-section__item">Styling</li>
+            <li class="biography-section__item">
               Creative Photography
             </li>
-            <li class="biography-section-label-list-item">Design</li>
+            <li class="biography-section__item">Design</li>
           </ul>
         </label>
-        <div class="biography-quote">
+        <div class="biography-section__quote">
           <hr class="small-line tablet-hide" />
-          <blockquote class="biography-section-blockquote line-height-120">
+          <blockquote class="biography-section__blockquote line-height-120">
             “The more I deal with the work as something that is my own, as
             something that is personal, the more successful it is.”
           </blockquote>
@@ -95,10 +95,10 @@
       </section>
       <!--designers-->
       <section class="designers-section" id="designers">
-        <h2 class="headline designers">Designers</h2>
-        <article class="designers-section-article flex gap-20 align-items-end">
+        <h2 class="headline designers-section__headline">Designers</h2>
+        <article class="designers-section__article flex gap-20 align-items-end">
           <figure
-            class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
+            class="designer-figure flex column content-flex-end gap-27 min-w-max-content"
           >
             <picture>
               <source
@@ -111,25 +111,25 @@
                 img/spurwing_agency@2x.png 2x"
               />
               <img
-                class="designers-section-article-figure-img"
+                class="designer-figure__img"
                 src="img/spurwing_agency.png"
                 alt="Jess Wonder photo"
               />
             </picture>
-            <figcaption class="designers-section-article-caption">
-              <p class="figure-caption">
-                <span class="figure-caption bold">Jess Wonder</span>
+            <figcaption class="designer-figure__caption">
+              <p class="designer-figure__text">
+                <span class="designer-figure__text bold">Jess Wonder</span>
                 <br />
-                <span class="figure-caption semibold">From/</span> Be more
+                <span class="designer-figure__text semibold">From/</span> Be more
                 flower
                 <br />
-                <span class="figure-caption semibold">Skills/</span> Design
+                <span class="designer-figure__text semibold">Skills/</span> Design
                 Strategy / Marketing
               </p>
             </figcaption>
           </figure>
           <figure
-            class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
+            class="designer-figure flex column content-flex-end gap-27 min-w-max-content"
           >
           <picture>
             <source
@@ -142,59 +142,59 @@
                 img/stil_1_small@2x.png 2x"
               />
             <img
-              class="designers-section-article-figure-img"
+              class="designer-figure__img"
               src="img/stil_1_small.png"
               alt="Kameron Clein photo"
             />
             </picture>
-            <figcaption class="designers-section-article-caption-nonfirst">
-              <p class="figure-caption">
-                <span class="figure-caption bold">Kameron Clein</span>
+            <figcaption class="designer-figure__caption__nonfirst">
+              <p class="designer-figure__text">
+                <span class="designer-figure__text bold">Kameron Clein</span>
                 <br />
-                <span class="figure-caption semibold">From/</span> Be more
+                <span class="designer-figure__text semibold">From/</span> Be more
                 flower
                 <br />
-                <span class="figure-caption semibold">Skills/</span> Design
+                <span class="designer-figure__text semibold">Skills/</span> Design
                 Strategy / Marketing
               </p>
             </figcaption>
           </figure>
           <figure
-            class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
+            class="designer-figure flex column content-flex-end gap-27 min-w-max-content"
           >
             <img
-              class="designers-section-article-figure-img"
+              class="designer-figure__img"
               src="img/stil_2_small.png"
               alt="LOUISSE RED photo"
             />
-            <figcaption class="designers-section-article-caption-nonfirst">
-              <p class="figure-caption">
-                <span class="figure-caption bold">LOUISSE RED</span>
+            <figcaption class="designer-figure__caption-nonfirst">
+              <p class="designer-figure__text">
+                <span class="designer-figure__text bold">LOUISSE RED</span>
                 <br />
-                <span class="figure-caption semibold">From/</span> Be more
+                <span class="designer-figure__text semibold">From/</span> Be more
                 flower
                 <br />
-                <span class="figure-caption semibold">Skills/</span> Design
+                <span class="designer-figure__text semibold">Skills/</span> Design
                 Strategy / Marketing
               </p>
             </figcaption>
           </figure>
           <figure
-            class="designers-section-article-figure flex column content-flex-end gap-27 min-w-max-content"
+            class="designer-figure flex column content-flex-end gap-27 min-w-max-content"
           >
             <img
-              class="designers-section-article-figure-img"
+              class="designer-figure__img"
               src="img/stil_1_small.png"
               alt="Kameron Clein photo"
             />
-            <figcaption class="designers-section-article-caption-nonfirst">
-              <p class="figure-caption">
-                <span class="figure-caption bold">Kameron Clein</span>
+            <figcaption class="designer-figure__caption__nonfirst">
+              <p class="designer-figure__text">
+                <span class="designer-figure__text bold">Kameron Clein</span>
                 <br />
-                <span class="figure-caption semibold">From/</span> Be more
+                <span class="designer-figure__text semibold">From/</span> Be more
                 flower
                 <br />
-                <span class="figure-caption semibold">Skills/</span> Design
+                <span class="designer-figure__text semibold">Skills/</span> Design
                 Strategy / Marketing
               </p>
             </figcaption>
@@ -203,55 +203,52 @@
       </section>
       <!--Testimonials-->
       <section class="testimonials-section" id="testimonials">
-        <div class="testimonials grid">
-          <section class="testimonials-links">
-            <section class="testimonials-links-section">
-              <p class="tLink">
+        <div class="testimonials-section__container grid">
+          <section class="testimonials-section__links">
+            <section class="links-section">
+              <p class="links-section__item">
                 <a
                   class="link lowercase"
                   href="www.whitepapers.com"
-                  class="testimonialsWhitepapers"
                   >www.whitepapers.com</a
                 >
-                <span class="tLink-caption">Website</span>
+                <span class="links-section__caption">Website</span>
               </p>
-              <p class="tLink">
+              <p class="links-section__item">
                 <a
                   class="link lowercase"
                   href="www.whitepapers.com"
-                  class="testimonialsWhitepapers"
                   >www.whitepapers.com</a
                 >
-                <span class="tLink-caption">Creativity</span>
+                <span class="links-section__caption">Creativity</span>
               </p>
-              <p class="tLink">
+              <p class="links-section__item">
                 <a
                   class="link lowercase"
                   href="www.whitepapers.com"
-                  class="testimonialsWhitepapers"
                   >www.whitepapers.com</a
                 >
-                <span class="tLink-caption">Creativity</span>
+                <span class="links-section__caption">Creativity</span>
               </p>
             </section>
           </section>
-          <section class="testimonials-img-section tablet-hide">
+          <section class="testimonials-section__img-section tablet-hide">
             <img
-              class="testimonials-img"
+              class="testimonials-section__image"
               src="img/keghan-crossland-ZZxmc66SjfM-unsplash-1.png"
               alt="Testimonials photo"
             />
           </section>
-          <h2 class="testimonials headline">Testimonials</h2>
+          <h2 class="testimonials-section__headline headline">Testimonials</h2>
 
-          <div class="testimonials-text-img">
-            <article class="testimonials-article grid">
-              <blockquote class="testimonials-article-blockquote">
+          <div class="testimonials-section__data">
+            <article class="testimonials-section__article grid">
+              <blockquote class="testimonials-section__blockquote">
                 I just really want to do good work and work with some great
                 people, people who challenge me.
               </blockquote>
               <img
-                class="testimonials-article-img"
+                class="testimonials-section__photo"
                 src="img/sinitta-leunen-YaReHIzNdRw-unsplash-1.png"
                 alt="Testimonials smart idea photo"
               />
@@ -261,21 +258,21 @@
       </section>
       <!-- strong points-->
       <section class="strong-points-section" id="strongPoints">
-        <h2 class="headline strong-points">Strong points</h2>
-        <div class="strong-points-section-container">
+        <h2 class="headline strong-points-section__headline">Strong points</h2>
+        <div class="strong-points-section__container">
           <img
-            class="strong-points-section-img height-100"
+            class="strong-points-section__img height-100"
             src="img/dawid-liberadzki-vPFbVB7DPZI-unsplash-1.png"
             alt="strong point photo"
           />
           <img
-            class="strong-points-section-img height-100"
+            class="strong-points-section__img height-100"
             src="img/avery-klein-JaXs8Tk5Iww-unsplash-1.png"
             alt="strong point photo"
           />
-          <div class="strong-points-section-strengths flex column">
-            <h3 class="article-head mt-m7">Strengths</h3>
-            <ul class="span-point-types">
+          <div class="strong-points-section__strengths flex column">
+            <h3 class="strong-points-section__article mt-m7">Strengths</h3>
+            <ul class="strong-points-section__point-types">
               <li>Interiors</li>
               <li>Outdoors</li>
               <li>Portraits</li>
@@ -289,12 +286,12 @@
             </ul>
           </div>
           <img
-            class="strong-points-section-img height-555-px"
+            class="strong-points-section__img height-555-px"
             src="img/keghan-crossland-ZZxmc66SjfM-unsplash-1.png"
             alt="strong point photo"
           />
           <img
-            class="strong-points-section-img height-100"
+            class="strong-points-section__img height-100"
             src="img/avery-klein-JaXs8Tk5Iww-unsplash-1.png"
             alt="strong point photo"
           />
@@ -302,8 +299,8 @@
       </section>
     </main>
     <footer class="footer flex">
-      <section class="footer-contact-section">
-        <address class="contact flex column">
+      <section class="footer__contact">
+        <address class="footer__address flex column">
           <a class="link underline phone" href="tel:+79211234567"
             >+7 921 123-45-67</a
           >
@@ -312,10 +309,10 @@
           >
         </address>
       </section>
-      <section class="footer-text-section">
-        <p>A product of <span class="footer-text-section-span">MOD</span></p>
+      <section class="footer__text">
+        <p>A product of <span class="footer__span">MOD</span></p>
       </section>
-      <section class="footer-copyright-section">
+      <section class="footer__copyright">
         <p>© 2023 Mod Media. All rights reserved</p>
       </section>
     </footer>

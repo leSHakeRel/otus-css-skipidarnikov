@@ -2,17 +2,13 @@
   display: grid;
 }
 
-.testimonials-links-section {
+.links-section {
   /* grid-template-rows: repeat(); */
   /* grid-template-rows: repeat(3, 1fr); */
   /* max-width: 98px; */
   /* justify-items: end; */
   height: 100%;
   align-content: center;
-}
-
-.testimonials-links {
-  /* grid-column: span 2; */
 }
 
 .row-gap-70 {
@@ -24,15 +20,12 @@
   transform: rotate(-180deg) translate(-31px, -165px);
 }
 
-.testimonials-img {
+.testimonials-section__image {
   /* width: 41%; */
   /* object-fit: cover; */
 }
 
-.testimonials-article {
-}
-
-.testimonials-article.grid {
+.testimonials-section__article.grid {
   /* grid-template-rows: 50% 50%; */
   /* grid-template-columns: 100%; */
   /* justify-content: center; */
@@ -42,18 +35,18 @@
   /* gap: 42px; */
 }
 
-.testimonials-article-blockquote {
+.testimonials-section__blockquote {
   /* grid-column: 1/-1; */
   align-self: center;
   justify-self: center;
 }
 
-.testimonials-article-blockquote {
+.testimonials-section__blockquote {
   text-align: center;
   /* padding: 0px 39px; */
 }
 
-.tLink {
+.links-section__item {
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +56,7 @@
     margin: 0 20px 150px 20px;
   }
 
-  .testimonials.headline {
+  .testimonials-section__headline.headline {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     justify-self: start;
@@ -71,82 +64,80 @@
     padding-right: 10px;
   }
 
-  .testimonials.grid {
+  .testimonials-section__container {
     padding: 0 119px;
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .tLink {
+  .links-section__item {
     writing-mode: vertical-lr;
     transform: rotate(-180deg) translate(-31px, -165px);
   }
 
-  .testimonials-links-section.grid {
-  }
 
-  .testimonials-text-img {
+  .testimonials-section__data {
     grid-column: 8 / -1;
   }
 
-  .testimonials-article.grid {
+  .testimonials-section__article.grid {
     grid-template-columns: 100%;
   }
 
-  .testimonials-article-blockquote,
-  .testimonials-article-img {
+  .testimonials-section__blockquote,
+  .testimonials-section__photo {
     grid-column: 1/-1;
   }
 
-  .testimonials-article.grid {
+  .testimonials-section__article.grid {
     max-width: 47%;
     justify-content: center;
     gap: 42px;
   }
 
-  .testimonials-img-section {
+  .testimonials-section__img-section {
     grid-column: span 5;
     justify-self: center;
   }
 
-  .testimonials-article-blockquote {
+  .testimonials-section__blockquote {
     font-family: "Bitter Regular";
   }
 
-  .testimonials-links-section {
+  .links-section {
     justify-items: end;
   }
 
-  .testimonials-article-img {
+  .testimonials-section__photo {
     justify-self: center;
   }
 
-  .testimonials-article-blockquote {
+  .testimonials-section__blockquote {
     font-size: 32px;
   }
 
-  .testimonials-links-section {
+  .links-section {
     display: grid;
     row-gap: 70px;
   }
 
-  .testimonials-article-blockquote {
+  .testimonials-section__blockquote {
     line-height: 100%;
     letter-spacing: 0;
   }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-  .testimonials-article.grid {
+  .testimonials-section__article.grid {
     grid-template-columns: 50% 50%;
   }
 
-  .testimonials.grid {
+  .testimonials-section__container {
     /* padding: 0 119px; */
     /* grid-template-columns: repeat(12, 1fr); */
     grid-template-rows: 21px 330px 35px; /*repeat(3, 1fr);*/
   }
 
-  .testimonials-links-section {
+  .links-section {
     display: flex;
     gap: 80px;
   }
@@ -157,79 +148,79 @@
     margin: 0 16px 80px 16px;
   }
 
-  .testimonials.headline {
+  .testimonials-section__headline.headline {
     order: -1;
     grid-row: 1 / 2;
     justify-self: end;
   }
 
-  .testimonials-links {
+  .testimonials-section__links {
     grid-row: -1 / -2;
   }
 
-  .testimonials-text-img {
+  .testimonials-section__data {
     grid-row: 2 / 3;
   }
-
-  .testimonials-links-section.grid {
+/* 
+  .links-section.grid {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } */
 
-  .testimonials-article-img {
+  .testimonials-section__photo {
     object-fit: cover;
     aspect-ratio: 1/1;
   }
 
-  .testimonials.grid {
+  .testimonials-section__container {
     row-gap: 28px;
   }
 
-  .testimonials-article-blockquote {
+  .testimonials-section__blockquote {
     font-family: "Bitter-Light";
     align-self: start;
     padding-top: 29px;
     padding-bottom: 29px;
   }
 
-  .testimonials-links-section {
+  .links-section {
     justify-items: start;
   }
 
-  .tLink-caption {
+  .links-section__caption {
     order: -1;
   }
 
-  .testimonials-article-blockquote {
+  .testimonials-section__blockquote {
     font-size: 30px;
   }
 
-  .testimonials-article-blockquote {
+  .testimonials-section__blockquote {
     line-height: 116%;
     letter-spacing: 1.5px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .testimonials-article.grid {
+  .testimonials-section__article.grid {
     gap: 40px;
   }
 
-  .testimonials-article-img {
+  .testimonials-section__photo {
     max-width: 336px;
     min-height: 330px;
   }
 }
 
 @media (max-width: 767px) {
-  .testimonials.grid {
+  .testimonials-section__container {
     grid-template-rows: 21px 1fr 35px; /*repeat(3, 1fr);*/
   }
 
-  .testimonials-article-img {
+  .testimonials-section__photo {
     justify-self: center;
   }
 
-  .testimonials-links-section {
+  .links-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -238,28 +229,28 @@
 }
 
 @media (min-width: 451px) and (max-width: 768px) {
-  .testimonials-article.grid {
+  .testimonials-section__article.grid {
     grid-template-rows: 25% 75%;
   }
 }
 
 @media (max-width: 450px) {
-  .testimonials-article-blockquote {
+  .testimonials-section__blockquote {
     padding: 0px 43px;
     letter-spacing: 0px;
   }
 
-  .testimonials-article.grid {
+  .testimonials-section__article.grid {
     grid-template-rows: 34% 63%;
     gap: 20px;
   }
 
-  .testimonials-article-img {
+  .testimonials-section__photo {
     width: 100%;
     height: 330px;
   }
 
-  .testimonials.grid {
+  .testimonials-section__container {
     /* grid-template-rows: 21px 1fr 103px; */
     grid-template-rows: 3% 77% 15%;
   }

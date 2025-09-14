@@ -32,8 +32,8 @@
     padding: 47px 17px;
   }
 
-  .footer-contact-section,
-  .footer-copyright-section {
+  .footer__contact,
+  .footer__copyright {
     padding-top: 6px;
   }
 }

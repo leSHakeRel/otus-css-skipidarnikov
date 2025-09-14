@@ -11,7 +11,6 @@
   line-height: 133%;
 }
 
-
 .space-evenly {
   justify-content: space-evenly;
 }
@@ -62,4 +61,16 @@
 
 .flex {
   display: flex;
+}
+
+@media (max-width: 1024px) {
+  .headline {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .headline {
+    font-size: 24px;
+  }
 }

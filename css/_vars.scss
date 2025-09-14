@@ -1,5 +1,5 @@
-$desktopMinWidth: 1025px;
-$tabletMinWidth: 769px;
 $tabletMaxWidth: 1024px;
+$desktopMinWidth: $tabletMaxWidth + 1px;
 $mobileMaxWidth: 768px;
+$tabletMinWidth: $mobileMaxWidth + 1px;
 $mobileMinWidth: 450px;

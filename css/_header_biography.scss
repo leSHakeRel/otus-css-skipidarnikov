@@ -160,7 +160,7 @@ a {
   justify-content: center;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $desktopMinWidth) {
   .menu-list__item:nth-last-child(2) {
     margin-right: -37px;
   }
@@ -340,7 +340,7 @@ a {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $tabletMaxWidth) {
   .nav-header.flex {
     height: 82px;
   }
@@ -523,7 +523,7 @@ a {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: $tabletMaxWidth) and (min-width: $mobileMaxWidth) {
   .biography-section {
     display: grid;
     grid-template-rows: 123px 156px 179px 406px;

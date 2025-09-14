@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $desktopMinWidth) {
   @supports (display: grid) {
     .strong-points-section__point-types {
       margin: 0px auto;
@@ -104,7 +104,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $tabletMaxWidth) {
   @supports (display: grid) {
     .strong-points-section__point-types {
       row-gap: 13px;
@@ -144,7 +144,7 @@
 
   .strong-points-section__img {
     max-width: 310px;
-    min-height: 450px;
+    min-height: $mobileMinWidth;
     object-fit: cover;
     aspect-ratio: 1/1;
   }
@@ -158,7 +158,7 @@
   }
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: $tabletMaxWidth) and (min-width: $mobileMaxWidth) {
   .strong-points-section {
     padding-right: 20px;
   }

@@ -19,14 +19,14 @@
   padding-left: 5px;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $desktopMinWidth) {
   .footer {
     /* display: flex; */
     padding: 70px 20px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $tabletMaxWidth) {
   .footer {
     /* display: flex; */
     padding: 47px 17px;

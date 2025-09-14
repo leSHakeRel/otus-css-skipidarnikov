@@ -30,7 +30,7 @@
   padding-right: 81px;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $desktopMinWidth) {
   .designers-section {
     padding-left: 20px;
   }
@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $tabletMaxWidth) {
   .headline.designers-section__headline {
     margin-left: 0px;
   }
@@ -78,7 +78,7 @@
   }
 }
 
-@media (max-width: 450px){
+@media (max-width: $mobileMinWidth){
   .designers-section {
     margin-bottom: 72px;
   }

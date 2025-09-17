@@ -305,7 +305,7 @@
         </p>
         <div class="callback__container">
           <h3 class="callback__label">Name</h3>
-          <input type="text" name="callback__name" class="callback__name" />
+          <input type="text" name="callback__name" required class="callback__name" placeholder="3+ Characters" />
           <img
                 class="callback__icon"
                 src="img/icons/icon_edit_name.svg"
@@ -314,7 +314,7 @@
         </div>
         <div class="callback__container">
           <h3 class="callback__label">E-mail</h3>
-          <input type="email" name="callback__email" class="callback__email" />
+          <input type="email" name="callback__email" class="callback__email" placeholder="name@email.com" />
           <img
                 class="callback__icon"
                 src="img/icons/icon_mail.svg"
@@ -323,7 +323,7 @@
         </div>
         <div class="callback__container">
           <h3 class="callback__label">Comment</h3>
-          <textarea type="text" name="callback__text" class="callback__text"></textarea>
+          <textarea type="textarea" name="callback__text" required class="callback__text" placeholder="Some text..."></textarea>
           <img
                 class="callback__icon"
                 src="img/icons/icon_comment.svg"
@@ -331,8 +331,8 @@
               />
         </div>
         <div class="callback__buttons-container">
-          <button class="callback__reject" id="reject">Cancel</button>
-          <button class="callback__accept" id="sendInfo"><span class="callback__plus"></span>Send</button>
+          <button class="callback__reject" id="reject" type="">Cancel</button>
+          <button class="callback__accept" id="sendInfo" type="submit"><span class="callback__plus">+</span>Send</button>
         </div>
       </div>
     </div>

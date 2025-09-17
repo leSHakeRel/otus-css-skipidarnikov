@@ -1035,10 +1035,15 @@ a {
   background: #fff;
   display: flex;
   flex-direction: column;
+  gap: 24px;
   padding: 20px;
 }
 .callback__label {
   padding-top: 10px;
+}
+.callback__header {
+  font-family: "Roboto Bold";
+  font-size: 22px;
 }
 .callback__buttons-container {
   padding-top: 20px;
@@ -1047,6 +1052,10 @@ a {
   align-items: center;
 }
 .callback__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  gap: 6px;
   position: relative;
 }
 .callback__icon {

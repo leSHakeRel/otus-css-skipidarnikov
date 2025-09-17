@@ -7,14 +7,30 @@
   align-items: center;
 }
 
-.callback {
-  background: #fff;
+@mixin form-block {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+}
+
+@mixin form-field {
+  @include form-block;
+  gap: 6px;
+}
+
+.callback {
+  background: #fff;
+  @include form-block;
   padding: 20px;
+  
 
   &__label {
     padding-top: 10px;
+  }
+
+  &__header {
+    font-family: "Roboto Bold";
+    font-size: 22px;
   }
 
   &__buttons-container {
@@ -25,6 +41,7 @@
   }
 
   &__container {
+    @include form-field;
     position: relative;
   }
 

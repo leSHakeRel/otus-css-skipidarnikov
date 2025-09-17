@@ -1,3 +1,5 @@
+@use "vars";
+
 .upper-case {
   text-transform: uppercase;
 }
@@ -51,7 +53,7 @@
   }
 }
 
-@media (min-width: $desktopMinWidth) {
+@media (min-width: vars.$desktopMinWidth) {
   .footer {
     /* display: flex; */
     flex-direction: row;
@@ -65,7 +67,7 @@
   }
 }
 
-@media (max-width: $tabletMaxWidth) {
+@media (max-width: vars.$tabletMaxWidth) {
   .footer {
     /* display: flex; */
     padding: 47px 17px;

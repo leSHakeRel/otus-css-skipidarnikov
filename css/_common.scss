@@ -11,7 +11,6 @@
   line-height: 133%;
 }
 
-
 .space-evenly {
   justify-content: space-evenly;
 }
@@ -62,4 +61,40 @@
 
 .flex {
   display: flex;
+}
+
+.content-flex-end {
+  justify-content: flex-end;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.min-w-max-content {
+  min-width: max-content;
+}
+
+.gap-27 {
+  gap: 27px;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.padding-right-81 {
+  padding-right: 81px;
+}
+
+@media (max-width: $tabletMaxWidth) {
+  .headline {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktopMinWidth) {
+  .headline {
+    font-size: 24px;
+  }
 }

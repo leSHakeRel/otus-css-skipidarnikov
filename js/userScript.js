@@ -6,9 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let funToggle = () => {
         const formElement = document.querySelector('.modal');
         formElement.classList.toggle('hidden');
+        document.querySelector('body').classList.toggle('disable-scroll');
     };
-
-    console.log(closeBtn)
 
     closeBtn.addEventListener('click', funToggle);
     openBtn.addEventListener('click', funToggle);

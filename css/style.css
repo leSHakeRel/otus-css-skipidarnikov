@@ -1030,6 +1030,25 @@ a {
   justify-content: center;
   align-items: center;
 }
+.modal__border {
+  border: 2px solid #FFF;
+  transform: rotate(1.95deg);
+  position: absolute;
+  height: 554px;
+  width: 31%;
+  border-radius: 10px;
+  z-index: -1;
+}
+@media (max-width: 1024px) {
+  .modal__border {
+    width: 58%;
+  }
+}
+@media (max-width: 450px) {
+  .modal__border {
+    width: 81%;
+  }
+}
 
 .callback {
   background: #fff;
@@ -1037,18 +1056,32 @@ a {
   flex-direction: column;
   gap: 24px;
   padding: 20px;
+  width: 31%;
+  border-radius: 10px;
+  border: 0px solid transparent;
+}
+@media (max-width: 1024px) {
+  .callback {
+    width: 58%;
+  }
+}
+@media (max-width: 450px) {
+  .callback {
+    width: 81%;
+  }
 }
 .callback__label {
   padding-top: 10px;
+  font-family: "Roboto Medium";
+  font-size: 18px;
 }
 .callback__header {
   font-family: "Roboto Bold";
   font-size: 22px;
 }
 .callback__buttons-container {
-  padding-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .callback__container {
@@ -1056,14 +1089,62 @@ a {
   flex-direction: column;
   gap: 24px;
   gap: 6px;
+  font-family: "Roboto Medium";
+  font-size: 18px;
   position: relative;
 }
 .callback__icon {
   position: absolute;
   right: 10px;
+  top: 40px;
+  width: 30px;
+  height: 30px;
 }
-.callback__email, .callback__name, .callback__text {
+.callback__text {
   width: 100%;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+.callback__email, .callback__name, .callback__comment {
+  width: 100%;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  border: 1px solid #B3B3B3;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.callback__email::-moz-placeholder, .callback__name::-moz-placeholder, .callback__comment::-moz-placeholder {
+  color: #868686;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+.callback__email::placeholder, .callback__name::placeholder, .callback__comment::placeholder {
+  color: #868686;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+.callback__reject, .callback__accept {
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  margin: 6px;
+}
+.callback__accept {
+  background: #000;
+  color: #fff;
+}
+.callback__reject {
+  border: 1.32px solid #B3B3B3;
+  color: #000;
+}
+.callback__plus {
+  margin-right: 2px;
 }
 
 .hidden {

@@ -1,3 +1,5 @@
+@use "vars";
+
 .modal {
   position: fixed;
   inset: 0;
@@ -5,6 +7,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__border {
+    border: 2px solid #FFF;
+    transform: rotate(1.95deg);
+    position: absolute;
+    height: 554px;
+    width: 31%;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  @media (max-width: vars.$tabletMaxWidth) {
+    &__border {
+      width: 58%;
+    }
+  }
+
+  @media (max-width: vars.$mobileMinWidth) {
+    &__border {
+      width: 81%;
+    }
+  }
 }
 
 @mixin form-block {
@@ -16,16 +40,36 @@
 @mixin form-field {
   @include form-block;
   gap: 6px;
+  font-family: "Roboto Medium";
+  font-size: 18px;
+}
+
+@mixin form-input {
+  width: 100%;
+  font-family: "Roboto Regular";
+  font-size: 16px;
 }
 
 .callback {
   background: #fff;
   @include form-block;
   padding: 20px;
-  
+  width: 31%;
+  border-radius: 10px;
+  border: 0px solid transparent;
+
+  @media (max-width: vars.$tabletMaxWidth) {
+    width: 58%;
+  }
+
+  @media (max-width: vars.$mobileMinWidth) {
+    width: 81%;
+  }
 
   &__label {
     padding-top: 10px;
+    font-family: "Roboto Medium";
+    font-size: 18px;
   }
 
   &__header {
@@ -34,9 +78,8 @@
   }
 
   &__buttons-container {
-    padding-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -48,15 +91,62 @@
   &__icon {
     position: absolute;
     right: 10px;
+    top: 40px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__text {
+    @include form-input;
   }
 
   &__email,
   &__name,
-  &__text {
-    width: 100%;
+  &__comment {
+    @include form-input;
+    border: 1px solid #B3B3B3;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  &__email::placeholder,
+  &__name::placeholder,
+  &__comment::placeholder {
+    color: #868686;
+    font-family: "Roboto Regular";
+    font-size: 16px;
+  }
+
+  &__reject,
+  &__accept {
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin: 6px;
+  }
+
+  &__accept {
+    background: #000;
+    color: #fff;
+  }
+
+  &__reject {
+    border: 1.32px solid #B3B3B3;
+    color: #000;
+  }
+
+  &__plus {
+    margin-right: 2px;
   }
 }
 
 .hidden {
   display: none;
 }
+

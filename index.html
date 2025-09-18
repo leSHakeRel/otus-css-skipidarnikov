@@ -297,45 +297,47 @@
       </section>
     </footer>
     <div class="modal hidden" id="modal">
-      <div class="callback">
-        <h2 class="callback__header">Get in touch</h2>
-        <p class="callback__text">
-          Do you have any questions? Have something to say? Don't be shy, write
-          to us:
-        </p>
-        <div class="callback__container">
-          <h3 class="callback__label">Name</h3>
-          <input type="text" name="callback__name" required class="callback__name" placeholder="3+ Characters" />
-          <img
-                class="callback__icon"
-                src="img/icons/icon_edit_name.svg"
-                alt="callback icon name"
-              />
-        </div>
-        <div class="callback__container">
-          <h3 class="callback__label">E-mail</h3>
-          <input type="email" name="callback__email" class="callback__email" placeholder="name@email.com" />
-          <img
-                class="callback__icon"
-                src="img/icons/icon_mail.svg"
-                alt="callback icon e-mail"
-              />
-        </div>
-        <div class="callback__container">
-          <h3 class="callback__label">Comment</h3>
-          <textarea type="textarea" name="callback__text" required class="callback__text" placeholder="Some text..."></textarea>
-          <img
-                class="callback__icon"
-                src="img/icons/icon_comment.svg"
-                alt="callback icon comment"
-              />
-        </div>
-        <div class="callback__buttons-container">
-          <button class="callback__reject" id="reject" type="">Cancel</button>
-          <button class="callback__accept" id="sendInfo" type="submit"><span class="callback__plus">+</span>Send</button>
-        </div>
-      </div>
+      <div class="modal__border"></div>
+      <form class="callback" url="#" method="get" id="callback">
+          <h2 class="callback__header">Get in touch</h2>
+          <p class="callback__text">
+            Do you have any questions? Have something to say? Don't be shy, write
+            to us:
+          </p>
+          <div class="callback__container">
+            <label for="callback__name" class="callback__label">Name</label>
+            <input type="text" name="callback__name" required class="callback__name" placeholder="3+ Characters" />
+            <img
+                  class="callback__icon"
+                  src="img/icons/icon_edit_name.svg"
+                  alt="callback icon name"
+                />
+          </div>
+          <div class="callback__container">
+            <label for="callback__email" class="callback__label">E-mail</label>
+            <input type="email" name="callback__email" class="callback__email" placeholder="name@email.com" />
+            <img
+                  class="callback__icon"
+                  src="img/icons/icon_mail.svg"
+                  alt="callback icon e-mail"
+                />
+          </div>
+          <div class="callback__container">
+            <label for="callback__comment" class="callback__label">Comment</label>
+            <textarea type="textarea" name="callback__comment" required rows="4" class="callback__comment" placeholder="Some text..."></textarea>
+            <img
+                  class="callback__icon"
+                  src="img/icons/icon_comment.svg"
+                  alt="callback icon comment"
+                />
+          </div>
+          <div class="callback__buttons-container">
+            <button class="callback__reject" id="reject" type="reset">Cancel</button>
+            <button class="callback__accept" id="sendInfo" type="submit"><span class="callback__plus">+</span>Send</button>
+          </div>
+        
+        </form>
     </div>
-    <script src="js/userScript.js" />
+    <script src="js/userScript.js"></script>
   </body>
 </html>

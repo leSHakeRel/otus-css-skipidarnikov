@@ -11,5 +11,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     closeBtn.addEventListener('click', funToggle);
     openBtn.addEventListener('click', funToggle);
-    acceptBtn.addEventListener('click', funToggle);
+    acceptBtn.addEventListener('submit', funToggle);
 });

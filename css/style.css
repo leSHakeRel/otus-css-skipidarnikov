@@ -1030,25 +1030,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-.modal__border {
-  border: 2px solid #FFF;
-  transform: rotate(1.95deg);
-  position: absolute;
-  height: 554px;
-  width: 31%;
-  border-radius: 10px;
-  z-index: -1;
-}
-@media (max-width: 1024px) {
-  .modal__border {
-    width: 58%;
-  }
-}
-@media (max-width: 450px) {
-  .modal__border {
-    width: 81%;
-  }
-}
 
 .callback {
   background: #fff;
@@ -1059,6 +1040,18 @@ a {
   width: 31%;
   border-radius: 10px;
   border: 0px solid transparent;
+  position: relative;
+}
+.callback::before {
+  content: "";
+  border: 2px solid #FFF;
+  transform: rotate(1.95deg);
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  border-radius: 10px;
+  top: -2px;
+  left: -2px;
 }
 @media (max-width: 1024px) {
   .callback {

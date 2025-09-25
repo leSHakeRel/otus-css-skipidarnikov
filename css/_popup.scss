@@ -37,7 +37,7 @@
   border: 0px solid transparent;
   position: relative;
 
-  &::before{
+  &::before {
     content: "";
     border: 2px solid #FFF;
     transform: rotate(1.95deg);
@@ -45,7 +45,7 @@
     height: 101%;
     width: 101%;
     border-radius: 10px;
-    // z-index: -1;
+    z-index: -1;
     top: -2px;
     left: -2px;
   }
@@ -86,6 +86,11 @@
     top: 40px;
     width: 30px;
     height: 30px;
+    fill: #868686;
+  }
+
+  &__icon:hover {
+    fill: #000000;
   }
 
   &__text {
@@ -104,12 +109,51 @@
     padding-bottom: 6px;
   }
 
+  &__comment {
+    resize: none;
+  }
+
   &__email::placeholder,
   &__name::placeholder,
   &__comment::placeholder {
     color: #868686;
     font-family: "Roboto Regular";
     font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  &__name:hover,
+  &__email:hover,
+  &__comment:hover {
+    background: #EDEDED;
+    border-color: #B3B3B3;
+  }
+
+  &__name:hover+svg,
+  &__email:hover+svg,
+  &__comment:hover+svg {
+    fill: #000000;
+  }
+
+  &__name:active,
+  &__email:active,
+  &__comment:active {
+    background: #FFFFFF;
+    border-color: #000000;
+  }
+
+  &__name:focus,
+  &__email:focus,
+  &__comment:focus {
+    border-color: #E0B59F;
+    outline: none;
+  }
+
+  &__name:focus+svg,
+  &__email:focus+svg,
+  &__comment:focus+svg {
+    fill: #A07C72;
   }
 
   &__reject,
@@ -128,9 +172,52 @@
     color: #fff;
   }
 
+  &__accept:hover {
+    background: #A07C72;
+    border-color: #A07C72;
+  }
+
+  &__accept:active {
+    background: #E0B59F;
+    border-color: #E0B59F;
+  }
+
+  &__accept:focus {
+    outline: 1.5px solid #E0B59F;
+    outline-offset: 3px;
+  }
+
+  &__accept:disabled {
+    background: #CCCCCC;
+    border-color: #CCCCCC;
+  }
+
   &__reject {
     border: 1.32px solid #B3B3B3;
     color: #000;
+  }
+
+  &__reject:hover {
+    border: 1.32px solid #ECC5B2;
+    background: #F5E0D6;
+  }
+
+  &__reject:active {
+    border: 1.32px solid #EAC8B7;
+    background: #E0B59F;
+  }
+
+  &__reject:focus {
+    border: 1.5px solid #B3B3B3;
+    color: #A07C72;
+    outline: 1.5px solid #E0B59F;
+    outline-offset: 3px;
+  }
+
+  &__reject:disabled {
+    border: 1.32px solid #CCCCCC;
+    background: #FFFFFF;
+    color: #CCCCCC
   }
 
   &__plus {

@@ -1,3 +1,5 @@
+@use "vars";
+
 .nav-header {
   /* margin: 0px 20px; */
   padding: 1% 20px;
@@ -103,7 +105,7 @@ a {
   justify-content: center;
 }
 
-@media (min-width: $desktopMinWidth) {
+@media (min-width: vars.$desktopMinWidth) {
   .menu-list__item:nth-last-child(2) {
     margin-right: -37px;
   }
@@ -264,7 +266,7 @@ a {
   }
 }
 
-@media (max-width: $tabletMaxWidth) {
+@media (max-width: vars.$tabletMaxWidth) {
   .nav-header.flex {
     height: 82px;
   }
@@ -426,7 +428,7 @@ a {
   }
 }
 
-@media (max-width: $tabletMaxWidth) and (min-width: $mobileMaxWidth) {
+@media (max-width: vars.$tabletMaxWidth) and (min-width: vars.$mobileMaxWidth) {
   .biography-section {
     display: grid;
     grid-template-rows: 123px 156px 179px 406px;

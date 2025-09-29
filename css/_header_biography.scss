@@ -70,6 +70,11 @@ a {
   letter-spacing: 0;
 }
 
+.link.menu-list__link:focus,
+.menu-list__link>.tablet-hide:focus {
+  color: #E0B59F;
+}
+
 .nav-header__title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
@@ -105,6 +110,49 @@ a {
   justify-content: center;
 }
 
+.message-button {
+  width: 30px;
+  height: 30px;
+}
+
+.message-button {
+  fill: #000;
+}
+
+.message-button:hover {
+  fill: #F5E0D6;
+}
+
+.message-button:active {
+  fill: #E0B59F;
+}
+
+.message-button:focus {
+  fill: #E0B59F;
+}
+
+.message-button:disabled {
+  border: 1.32px solid #CCCCCC;
+  fill: #CCCCCC;
+}
+
+.link.menu-list__link {
+  // padding: 14px;
+  border-radius: 10px;
+}
+
+.link.menu-list__link:focus {
+  text-decoration: none;
+  // padding: 14px;
+  outline: 2px solid #E0B59F;
+  outline-offset: 14px;
+  border-radius: 10px;
+}
+
+.link.menu-list__link:focus {
+  fill: #F5E0D6;
+}
+
 @media (min-width: vars.$desktopMinWidth) {
   .menu-list__item:nth-last-child(2) {
     margin-right: -37px;
@@ -121,10 +169,9 @@ a {
   }
 
   .hero-section {
-    background-image: image-set(
-      "../img/inside_weather_desktop.png" 1x,
-      "../img/inside_weather_desktop@2x.png"
-    );
+    background-image: image-set("../img/inside_weather_desktop.png" 1x,
+        "../img/inside_weather_desktop@2x.png"
+      );
   }
 
   .link.menu-list__link {
@@ -249,10 +296,6 @@ a {
     white-space: nowrap;
   }
 
-  .message-button {
-    padding: 10px;
-  }
-
   .hero-section__paragraph {
     font-size: 20px;
   }
@@ -271,6 +314,14 @@ a {
     height: 82px;
   }
 
+  .nav-header {
+    padding: 1% 0%;
+  }
+
+  .link.menu-list__link {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   /* .biography-section {
     display: grid;
     grid-template-rows: 123px 156px 179px 406px;
@@ -283,6 +334,13 @@ a {
     font-family: "Bitter Regular";
     font-size: 40px;
     letter-spacing: 0;
+  }
+
+  .link.menu-list__link {
+    // padding-top: 14px;
+    // padding-bottom: 14px;
+    // padding-left: 28px;
+    // padding-right: 28px;
   }
 
   .hero-section {
@@ -422,10 +480,6 @@ a {
   .biography-text {
     gap: 60px;
   }
-
-  .link.menu-list__link:hover {
-    color: #a07c72;
-  }
 }
 
 @media (max-width: vars.$tabletMaxWidth) and (min-width: vars.$mobileMaxWidth) {
@@ -438,19 +492,17 @@ a {
   }
 
   .hero-section {
-    background-image: image-set(
-      "../img/inside_weather_tablet.png" 1x,
-      "../img/inside_weather_tablet@2x.png"
-    );
+    background-image: image-set("../img/inside_weather_tablet.png" 1x,
+        "../img/inside_weather_tablet@2x.png"
+      );
   }
 }
 
 @media (max-width: 767px) {
   .hero-section {
-    background-image: image-set(
-      "../img/inside_weather_mobile.png" 1x,
-      "../img/inside_weather_mobile@2x.png"
-    );
+    background-image: image-set("../img/inside_weather_mobile.png" 1x,
+        "../img/inside_weather_mobile@2x.png"
+      );
   }
 
   .biography-section {
@@ -470,7 +522,12 @@ a {
   }
 
   .nav-header {
-    padding: 1% 7%;
+    padding: 1% 0%;
+  }
+
+  .link.menu-list__link {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 

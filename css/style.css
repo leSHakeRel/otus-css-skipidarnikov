@@ -388,6 +388,11 @@ a {
   letter-spacing: 0;
 }
 
+.link.menu-list__link:focus,
+.menu-list__link > .tablet-hide:focus {
+  color: #E0B59F;
+}
+
 .nav-header__title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
@@ -421,6 +426,47 @@ a {
   align-items: center;
   background-color: #fff;
   justify-content: center;
+}
+
+.message-button {
+  width: 30px;
+  height: 30px;
+}
+
+.message-button {
+  fill: #000;
+}
+
+.message-button:hover {
+  fill: #F5E0D6;
+}
+
+.message-button:active {
+  fill: #E0B59F;
+}
+
+.message-button:focus {
+  fill: #E0B59F;
+}
+
+.message-button:disabled {
+  border: 1.32px solid #CCCCCC;
+  fill: #CCCCCC;
+}
+
+.link.menu-list__link {
+  border-radius: 10px;
+}
+
+.link.menu-list__link:focus {
+  text-decoration: none;
+  outline: 2px solid #E0B59F;
+  outline-offset: 14px;
+  border-radius: 10px;
+}
+
+.link.menu-list__link:focus {
+  fill: #F5E0D6;
 }
 
 @media (min-width: 1025px) {
@@ -537,9 +583,6 @@ a {
   .menu-list {
     white-space: nowrap;
   }
-  .message-button {
-    padding: 10px;
-  }
   .hero-section__paragraph {
     font-size: 20px;
   }
@@ -554,6 +597,13 @@ a {
 @media (max-width: 1024px) {
   .nav-header.flex {
     height: 82px;
+  }
+  .nav-header {
+    padding: 1% 0%;
+  }
+  .link.menu-list__link {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   /* .biography-section {
     display: grid;
@@ -679,9 +729,6 @@ a {
   .biography-text {
     gap: 60px;
   }
-  .link.menu-list__link:hover {
-    color: #a07c72;
-  }
 }
 @media (max-width: 1024px) and (min-width: 768px) {
   .biography-section {
@@ -715,7 +762,11 @@ a {
     max-width: 100%;
   }
   .nav-header {
-    padding: 1% 7%;
+    padding: 1% 0%;
+  }
+  .link.menu-list__link {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 .nav-header,
@@ -1050,6 +1101,7 @@ a {
   height: 101%;
   width: 101%;
   border-radius: 10px;
+  z-index: -1;
   top: -2px;
   left: -2px;
 }
@@ -1092,6 +1144,10 @@ a {
   top: 40px;
   width: 30px;
   height: 30px;
+  fill: #868686;
+}
+.callback__icon:hover {
+  fill: #000000;
 }
 .callback__text {
   width: 100%;
@@ -1109,15 +1165,40 @@ a {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+.callback__comment {
+  resize: none;
+}
 .callback__email::-moz-placeholder, .callback__name::-moz-placeholder, .callback__comment::-moz-placeholder {
   color: #868686;
   font-family: "Roboto Regular";
   font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 .callback__email::placeholder, .callback__name::placeholder, .callback__comment::placeholder {
   color: #868686;
   font-family: "Roboto Regular";
   font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.callback__name:hover, .callback__email:hover, .callback__comment:hover {
+  background: #EDEDED;
+  border-color: #B3B3B3;
+}
+.callback__name:hover + svg, .callback__email:hover + svg, .callback__comment:hover + svg {
+  fill: #000000;
+}
+.callback__name:active, .callback__email:active, .callback__comment:active {
+  background: #FFFFFF;
+  border-color: #000000;
+}
+.callback__name:focus, .callback__email:focus, .callback__comment:focus {
+  border-color: #E0B59F;
+  outline: none;
+}
+.callback__name:focus + svg, .callback__email:focus + svg, .callback__comment:focus + svg {
+  fill: #A07C72;
 }
 .callback__reject, .callback__accept {
   font-family: "Roboto Medium";
@@ -1132,9 +1213,44 @@ a {
   background: #000;
   color: #fff;
 }
+.callback__accept:hover {
+  background: #A07C72;
+  border-color: #A07C72;
+}
+.callback__accept:active {
+  background: #E0B59F;
+  border-color: #E0B59F;
+}
+.callback__accept:focus {
+  outline: 1.5px solid #E0B59F;
+  outline-offset: 3px;
+}
+.callback__accept:disabled {
+  background: #CCCCCC;
+  border-color: #CCCCCC;
+}
 .callback__reject {
   border: 1.32px solid #B3B3B3;
   color: #000;
+}
+.callback__reject:hover {
+  border: 1.32px solid #ECC5B2;
+  background: #F5E0D6;
+}
+.callback__reject:active {
+  border: 1.32px solid #EAC8B7;
+  background: #E0B59F;
+}
+.callback__reject:focus {
+  border: 1.5px solid #B3B3B3;
+  color: #A07C72;
+  outline: 1.5px solid #E0B59F;
+  outline-offset: 3px;
+}
+.callback__reject:disabled {
+  border: 1.32px solid #CCCCCC;
+  background: #FFFFFF;
+  color: #CCCCCC;
 }
 .callback__plus {
   margin-right: 2px;

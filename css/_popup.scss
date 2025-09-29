@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: #817E7E99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.callback {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  &__label {
+    padding-top: 10px;
+  }
+
+  &__buttons-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 10px;
+  }
+
+  &__email,
+  &__name,
+  &__text {
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}

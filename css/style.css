@@ -324,7 +324,7 @@
 }
 
 a {
-  color: #000;
+  color: #000000;
   font-size: inherit;
   text-transform: inherit;
   color: inherit;
@@ -382,17 +382,6 @@ a {
           text-decoration: underline solid #fff;
 }
 
-.link.menu-list__link {
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0;
-}
-
-.link.menu-list__link:focus,
-.menu-list__link > .tablet-hide:focus {
-  color: #E0B59F;
-}
-
 .nav-header__title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
@@ -429,12 +418,11 @@ a {
 }
 
 .message-button {
-  width: 30px;
-  height: 30px;
-}
-
-.message-button {
-  fill: #000;
+  width: 45px;
+  height: 45px;
+  color: #000;
+  transition: fill 0.3s, outline-color 0.3s;
+  fill: #000000;
 }
 
 .message-button:hover {
@@ -454,8 +442,18 @@ a {
   fill: #CCCCCC;
 }
 
+.link.menu-list__link:focus,
+.menu-list__link > .tablet-hide:focus {
+  color: #E0B59F;
+}
+
 .link.menu-list__link {
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
   border-radius: 10px;
+  outline-color: transparent;
+  transition: color 0.3s, outline-color 0.3s;
 }
 
 .link.menu-list__link:focus {
@@ -463,10 +461,12 @@ a {
   outline: 2px solid #E0B59F;
   outline-offset: 14px;
   border-radius: 10px;
+  fill: #F5E0D6;
+  color: #A07C72;
 }
 
-.link.menu-list__link:focus {
-  fill: #F5E0D6;
+.link.menu-list__link:hover {
+  color: #A07C72;
 }
 
 @media (min-width: 1025px) {
@@ -590,8 +590,8 @@ a {
     gap: 36px;
   }
   .link.menu-list__link:hover {
-    -webkit-text-decoration: underline solid #000;
-            text-decoration: underline solid #000;
+    -webkit-text-decoration: underline solid #A07C72;
+            text-decoration: underline solid #A07C72;
   }
 }
 @media (max-width: 1024px) {
@@ -778,10 +778,9 @@ a {
 }
 
 .small-line {
-  /* border: 1px solid #000; */
   height: 6px;
   width: 20px;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .biography-section__img {
@@ -1013,7 +1012,7 @@ a {
 }
 
 .footer {
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
   font-size: 16px;
 }
@@ -1164,6 +1163,11 @@ a {
   padding-right: 10px;
   padding-top: 6px;
   padding-bottom: 6px;
+  transition: fill 0.3s;
+}
+.callback__email + svg, .callback__name + svg, .callback__comment + svg {
+  fill: #868686;
+  transition: fill 0.3s;
 }
 .callback__comment {
   resize: none;
@@ -1208,9 +1212,10 @@ a {
   padding-bottom: 10px;
   width: 50%;
   margin: 6px;
+  transition: background 0.3s;
 }
 .callback__accept {
-  background: #000;
+  background: #000000;
   color: #fff;
 }
 .callback__accept:hover {
@@ -1231,7 +1236,7 @@ a {
 }
 .callback__reject {
   border: 1.32px solid #B3B3B3;
-  color: #000;
+  color: #000000;
 }
 .callback__reject:hover {
   border: 1.32px solid #ECC5B2;

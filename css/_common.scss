@@ -108,3 +108,17 @@ html {
 .disable-scroll {
   overflow: hidden;
 }
+
+.disable-horizontal-scroll {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.container-big {
+  max-width: 1890px;
+  margin: 0 auto;
+}

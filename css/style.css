@@ -106,6 +106,20 @@ html {
   overflow: hidden;
 }
 
+.disable-horizontal-scroll {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.container-big {
+  max-width: 1890px;
+  margin: 0 auto;
+}
+
 .grid {
   display: grid;
 }
@@ -161,7 +175,7 @@ html {
 
 @media (min-width: 1025px) {
   .testimonials-section {
-    margin: 0 20px 150px 20px;
+    padding-bottom: 150px;
   }
   .testimonials-section__headline.headline {
     writing-mode: vertical-lr;
@@ -520,8 +534,6 @@ a {
   } */
   .biography-section {
     padding: 151px 0px 150px 0px;
-    margin-left: 138px;
-    margin-right: 138px;
   }
   .biography-section__img {
     /* width: 49%; */
@@ -575,7 +587,6 @@ a {
   }
   .biography-section__blockquote {
     font-size: 26px;
-    margin-right: 75px;
   }
   .biography-section__article {
     font-size: 86px;
@@ -706,7 +717,6 @@ a {
     font-family: "Bitter-Light";
     display: block;
     margin: 0px;
-    max-width: 75%;
     text-align: start;
   }
   .biography-section__article {
@@ -798,8 +808,8 @@ a {
   flex-grow: 1;
 }
 .biography-section__blockquote.line-height-120 {
-  line-height: 120%;
-  letter-spacing: -0.05px;
+  line-height: 31px;
+  letter-spacing: 1.95px;
 }
 .biography-section__label {
   letter-spacing: -0.1px;
@@ -843,7 +853,7 @@ a {
     align-self: flex-end;
     padding-right: 81px;
   }
-  .designer-figure__caption__nonfirst {
+  .designer-figure__caption_nonfirst {
     align-self: flex-start;
   }
 }
@@ -932,7 +942,6 @@ a {
     }
   }
   .headline.strong-points-section__headline {
-    margin-left: 139px;
     margin-bottom: 32px;
   }
   .strong-points-section {

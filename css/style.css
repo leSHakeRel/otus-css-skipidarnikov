@@ -185,7 +185,6 @@ html {
     padding-right: 10px;
   }
   .testimonials-section__container {
-    padding: 0 119px;
     grid-template-columns: repeat(12, 1fr);
   }
   .testimonials-section__data {
@@ -193,12 +192,13 @@ html {
   }
   .testimonials-section__article.grid {
     grid-template-columns: 100%;
+    grid-template-rows: 45% 45%;
   }
   .testimonials-section__blockquote, .testimonials-section__photo {
     grid-column: 1/-1;
   }
   .testimonials-section__article.grid {
-    max-width: 47%;
+    max-width: 74%;
     justify-content: center;
     gap: 42px;
   }
@@ -211,18 +211,22 @@ html {
   }
   .testimonials-section__photo {
     justify-self: center;
+    margin-left: -39px;
   }
   .testimonials-section__blockquote {
     font-size: 32px;
   }
   .testimonials-section__blockquote {
-    line-height: 100%;
-    letter-spacing: 0;
+    line-height: 118%;
+    width: 63%;
+    margin-top: 39px;
+    margin-left: -42px;
+    letter-spacing: 0.1px;
   }
   .links-section {
     justify-items: end;
     display: grid;
-    row-gap: 70px;
+    row-gap: 96px;
   }
   .links-section__item {
     writing-mode: vertical-lr;
@@ -276,8 +280,11 @@ html {
     font-size: 30px;
   }
   .testimonials-section__blockquote {
-    line-height: 116%;
-    letter-spacing: 1.5px;
+    line-height: 119.5%;
+    /* letter-spacing: 0.2px; */
+    width: 99%;
+    margin-left: -16px;
+    margin-top: -2px;
   }
   .links-section {
     justify-items: start;
@@ -565,15 +572,15 @@ a {
     justify-content: flex-start;
     gap: 10px;
   }
-  .biography-section__list, .biography-section__item-item {
+  .biography-section__list, .biography-section__item {
     list-style-position: outside;
     list-style-type: "/";
   }
-  .biography-section__item-item {
+  .biography-section__item {
     padding-left: 4px;
   }
   .biography-section__blockquote {
-    font-family: "Bitter Regular";
+    font-family: "Bitter Light";
   }
   .biography-section__article {
     font-family: "Playfair Display Medium";
@@ -586,7 +593,7 @@ a {
     grid-row: 4/5;
   }
   .biography-section__blockquote {
-    font-size: 26px;
+    font-size: 29px;
   }
   .biography-section__article {
     font-size: 86px;
@@ -631,6 +638,12 @@ a {
     font-family: "Bitter Regular";
     font-size: 40px;
     letter-spacing: 0;
+    padding-left: 22px;
+    margin-right: -19px;
+  }
+  .menu-list__link.contactsButton {
+    padding-right: 32px;
+    padding-left: 11px;
   }
   .hero-section {
     background-repeat: repeat;
@@ -696,13 +709,14 @@ a {
     order: 0;
     grid-row: 1;
     grid-column: 2;
+    margin-left: -6px;
   }
   .biography-section__quote {
     grid-row: 2;
     grid-column: 2/-2;
     align-self: end;
   }
-  .biography-section__list, .biography-section__item-item {
+  .biography-section__list, .biography-section__item {
     /* list-style-image: none; */
     list-style-position: outside;
     list-style-type: "-";
@@ -710,7 +724,7 @@ a {
   .biography-section__list {
     margin-left: 8px;
   }
-  .biography-section__item-item {
+  .biography-section__item {
     padding-left: 4px;
   }
   .biography-section__blockquote {
@@ -732,6 +746,7 @@ a {
   }
   .biography-section__article {
     font-size: 64px;
+    margin-left: -6px;
   }
   .hero-section__caption {
     font-size: 70px;
@@ -809,13 +824,25 @@ a {
 }
 .biography-section__blockquote.line-height-120 {
   line-height: 31px;
-  letter-spacing: 1.95px;
+  font-weight: 300;
+  max-width: 81%;
+  letter-spacing: 0px;
 }
 .biography-section__label {
   letter-spacing: -0.1px;
   line-height: 114%;
 }
 
+@media (max-width: 1024px) {
+  .biography-section {
+    width: 100%;
+  }
+  .biography-section__blockquote.line-height-120 {
+    line-height: 36px;
+    letter-spacing: 0px;
+    margin-left: -6px;
+  }
+}
 .designers-section__article {
   overflow-x: auto;
   margin: 0 auto;
@@ -948,7 +975,7 @@ a {
     margin-bottom: 150px;
   }
   .strong-points-section__strengths {
-    margin: 0px 38px;
+    margin: -8px 38px;
   }
   .strong-points-section__container {
     padding-left: 20px;
@@ -964,6 +991,11 @@ a {
   }
   .strong-points-section__point-types {
     letter-spacing: 0;
+    margin-top: -18px;
+    line-height: 34px;
+  }
+  .strong-points-section__type {
+    margin-left: -5px;
   }
   .height-555-px {
     height: 555px;
@@ -1034,7 +1066,7 @@ a {
   padding-left: 90px;
 }
 .footer__copyright {
-  margin-top: 17px;
+  margin-top: -6px;
 }
 .footer__span {
   padding-left: 5px;
@@ -1079,10 +1111,14 @@ a {
   }
   .footer__contact, .footer__copyright {
     padding-top: 6px;
+    margin-top: -1px;
   }
   .footer__text {
     order: -1;
     align-self: flex-end;
+    margin: 0;
+    margin-top: 2px;
+    letter-spacing: 0.3px;
   }
 }
 .modal {

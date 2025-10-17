@@ -250,17 +250,18 @@ a {
     }
 
     &__list,
-    &__item-item {
+    &__item {
       list-style-position: outside;
       list-style-type: "/";
     }
 
-    &__item-item {
+    &__item {
       padding-left: 4px;
     }
 
     &__blockquote {
-      font-family: "Bitter Regular";
+      // font-family: "Bitter Regular";
+      font-family: "Bitter Light";
     }
 
     &__article {
@@ -276,7 +277,8 @@ a {
     }
 
     &__blockquote {
-      font-size: 26px;
+      // font-size: 26px;
+      font-size: 29px;
       // margin-right: 75px;
     }
 
@@ -320,6 +322,8 @@ a {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
+  
   /* .biography-section {
     display: grid;
     grid-template-rows: 123px 156px 179px 406px;
@@ -332,6 +336,13 @@ a {
     font-family: "Bitter Regular";
     font-size: 40px;
     letter-spacing: 0;
+    padding-left: 22px;
+    margin-right: -19px;
+  }
+
+  .menu-list__link.contactsButton {
+    padding-right: 32px;
+    padding-left: 11px;
   }
 
   .link.menu-list__link {
@@ -416,6 +427,7 @@ a {
       order: 0;
       grid-row: 1;
       grid-column: 2;
+      margin-left: -6px;
     }
 
     &__quote {
@@ -425,7 +437,7 @@ a {
     }
 
     &__list,
-    &__item-item {
+    &__item {
       /* list-style-image: none; */
       list-style-position: outside;
       list-style-type: "-";
@@ -435,7 +447,7 @@ a {
       margin-left: 8px;
     }
 
-    &__item-item {
+    &__item {
       padding-left: 4px;
     }
 
@@ -463,6 +475,7 @@ a {
 
     &__article {
       font-size: 64px;
+      margin-left: -6px;
     }
   }
 
@@ -560,11 +573,25 @@ a {
     // line-height: 120%;
     // letter-spacing: -0.05px;
     line-height: 31px;
-    letter-spacing: 1.95px;
+    // letter-spacing: 1.95px;
+    font-weight: 300;
+    max-width: 81%;
+    letter-spacing: 0px;
   }
 
   &__label {
     letter-spacing: -0.1px;
     line-height: 114%;
+  }
+}
+
+@media (max-width: vars.$tabletMaxWidth) {
+  .biography-section {
+    width: 100%;
+    &__blockquote.line-height-120 {
+      line-height: 36px;
+      letter-spacing: 0px;
+      margin-left: -6px;
+    }
   }
 }

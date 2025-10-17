@@ -790,12 +790,20 @@ a {
   .biography-section__blockquote {
     max-width: 100%;
   }
+  .biography-section__img {
+    width: 98%;
+  }
+  .message-button {
+    width: 65px;
+  }
   .nav-header {
     padding: 1% 0%;
   }
   .link.menu-list__link {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
+  }
+  .gap-55 {
+    gap: 10px;
   }
 }
 .nav-header,

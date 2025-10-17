@@ -530,6 +530,14 @@ a {
     &__blockquote {
       max-width: 100%;
     }
+
+    &__img {
+      width: 98%;
+    }
+  }
+
+  .message-button {
+    width: 65px;
   }
 
   .nav-header {
@@ -537,9 +545,13 @@ a {
   }
 
   .link.menu-list__link {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
   }
+
+  .gap-55 {
+    gap: 10px;
+  }
+  
 }
 
 .nav-header,

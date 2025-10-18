@@ -607,3 +607,27 @@ a {
     }
   }
 }
+
+@media (max-width: vars.$mobileMaxWidth) {
+  .menu-list.flex {
+    width: 81%;
+  }
+
+  .biography-section {
+    &__blockquote.line-height-120 {
+      margin-right: 0px;
+      max-width: 100%;
+      margin-left: -1px;
+    }
+
+    &__article.line-height-133 {
+      padding-bottom: 8px;
+      padding-left: 7px;
+    }
+
+    &__label {
+      padding-top: 1px;
+      padding-left: 5px;
+    }
+  }
+}

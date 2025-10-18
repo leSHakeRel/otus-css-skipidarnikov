@@ -54,7 +54,7 @@
     width: 58%;
   }
 
-  @media (max-width: vars.$mobileMinWidth) {
+  @media (max-width: vars.$mobileMaxWidth) {
     width: 81%;
   }
 

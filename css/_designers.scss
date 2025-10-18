@@ -69,7 +69,7 @@
   }
 }
 
-@media (max-width: vars.$mobileMinWidth) {
+@media (max-width: vars.$mobileMaxWidth) {
   .designers-section {
     margin-bottom: 72px;
   }

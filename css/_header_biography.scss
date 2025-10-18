@@ -7,7 +7,7 @@
 }
 
 a {
-  color: #000;
+  color: vars.$baseColor;
   font-size: inherit;
   text-transform: inherit;
   color: inherit;
@@ -64,17 +64,6 @@ a {
   text-decoration: underline solid #fff;
 }
 
-.link.menu-list__link {
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0;
-}
-
-.link.menu-list__link:focus,
-.menu-list__link>.tablet-hide:focus {
-  color: #E0B59F;
-}
-
 .nav-header__title {
   font-family: "Playfair Display SemiBold";
   line-height: 120%;
@@ -111,12 +100,11 @@ a {
 }
 
 .message-button {
-  width: 30px;
-  height: 30px;
-}
-
-.message-button {
-  fill: #000;
+  width: 45px;
+  height: 45px;
+  color: #000;
+  transition: fill vars.$animationDuration, outline-color vars.$animationDuration;
+  fill: vars.$baseColor;
 }
 
 .message-button:hover {
@@ -124,11 +112,11 @@ a {
 }
 
 .message-button:active {
-  fill: #E0B59F;
+  fill: vars.$activeLinkColor;
 }
 
 .message-button:focus {
-  fill: #E0B59F;
+  fill: vars.$activeLinkColor;
 }
 
 .message-button:disabled {
@@ -136,21 +124,31 @@ a {
   fill: #CCCCCC;
 }
 
+.link.menu-list__link:focus,
+.menu-list__link>.tablet-hide:focus {
+  color: vars.$activeLinkColor;
+}
+
 .link.menu-list__link {
-  // padding: 14px;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
   border-radius: 10px;
+  outline-color: transparent;
+  transition: color vars.$animationDuration, outline-color vars.$animationDuration;
 }
 
 .link.menu-list__link:focus {
   text-decoration: none;
-  // padding: 14px;
-  outline: 2px solid #E0B59F;
+  outline: 2px solid vars.$activeLinkColor;
   outline-offset: 14px;
   border-radius: 10px;
+  fill: #F5E0D6;
+  color: vars.$hoverLinkColor;
 }
 
-.link.menu-list__link:focus {
-  fill: #F5E0D6;
+.link.menu-list__link:hover {
+  color: vars.$hoverLinkColor;
 }
 
 @media (min-width: vars.$desktopMinWidth) {
@@ -305,7 +303,7 @@ a {
   }
 
   .link.menu-list__link:hover {
-    text-decoration: underline solid #000;
+    text-decoration: underline solid vars.$hoverLinkColor;
   }
 }
 
@@ -540,10 +538,9 @@ a {
 }
 
 .small-line {
-  /* border: 1px solid #000; */
   height: 6px;
   width: 20px;
-  background-color: #000;
+  background-color: vars.$baseColor;
 }
 
 .biography-section {

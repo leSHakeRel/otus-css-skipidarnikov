@@ -107,6 +107,14 @@
     padding-right: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
+    transition: fill vars.$animationDuration;
+  }
+
+  &__email+svg,
+  &__name+svg,
+  &__comment+svg {
+    fill: #868686;
+    transition: fill vars.$animationDuration;
   }
 
   &__comment {
@@ -146,14 +154,14 @@
   &__name:focus,
   &__email:focus,
   &__comment:focus {
-    border-color: #E0B59F;
+    border-color: vars.$activeLinkColor;
     outline: none;
   }
 
   &__name:focus+svg,
   &__email:focus+svg,
   &__comment:focus+svg {
-    fill: #A07C72;
+    fill: vars.$hoverLinkColor;
   }
 
   &__reject,
@@ -165,25 +173,26 @@
     padding-bottom: 10px;
     width: 50%;
     margin: 6px;
+    transition: background vars.$animationDuration;
   }
 
   &__accept {
-    background: #000;
+    background: vars.$baseColor;
     color: #fff;
   }
 
   &__accept:hover {
-    background: #A07C72;
-    border-color: #A07C72;
+    background: vars.$hoverLinkColor;
+    border-color: vars.$hoverLinkColor;
   }
 
   &__accept:active {
-    background: #E0B59F;
-    border-color: #E0B59F;
+    background: vars.$activeLinkColor;
+    border-color: vars.$activeLinkColor;
   }
 
   &__accept:focus {
-    outline: 1.5px solid #E0B59F;
+    outline: 1.5px solid vars.$activeLinkColor;
     outline-offset: 3px;
   }
 
@@ -194,7 +203,7 @@
 
   &__reject {
     border: 1.32px solid #B3B3B3;
-    color: #000;
+    color: vars.$baseColor;
   }
 
   &__reject:hover {
@@ -204,13 +213,13 @@
 
   &__reject:active {
     border: 1.32px solid #EAC8B7;
-    background: #E0B59F;
+    background: vars.$activeLinkColor;
   }
 
   &__reject:focus {
     border: 1.5px solid #B3B3B3;
-    color: #A07C72;
-    outline: 1.5px solid #E0B59F;
+    color: vars.$hoverLinkColor;
+    outline: 1.5px solid vars.$activeLinkColor;
     outline-offset: 3px;
   }
 

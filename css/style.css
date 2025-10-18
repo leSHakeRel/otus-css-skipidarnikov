@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-width: 350px;
+}
+
 .rotate-180 {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);

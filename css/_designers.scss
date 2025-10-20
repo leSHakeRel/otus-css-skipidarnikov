@@ -1,11 +1,19 @@
 @use "vars";
 
-.designers-section__article {
-  overflow-x: auto;
-  margin: 0 auto;
-  // align-items: self-start;
-  margin-top: 32px;
-  padding-bottom: 7px;
+.designers-section {
+  &__article {
+    overflow-x: auto;
+    margin: 0 auto;
+    // align-items: self-start;
+    margin-top: 32px;
+    padding-bottom: 7px;
+  }
+}
+
+.designer-figure {
+  &__img:hover {
+    animation: pulse-img 0.8s ease-in-out 1 both;
+  }
 }
 
 .designer-figure {

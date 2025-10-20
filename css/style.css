@@ -813,6 +813,13 @@ a {
     gap: 10px;
   }
 }
+.nav-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+}
+
 .nav-header,
 .nav-header__nav,
 .menu-list {

@@ -135,14 +135,13 @@ body {
     transform: scale(1);
   }
 }
-@media (min-width: 1025px) {
-  .testimonials-section,
-  .biography-section,
-  .designers-section,
-  .strong-points-section {
-    scroll-margin-top: 135px;
-  }
+.testimonials-section,
+.biography-section,
+.designers-section,
+.strong-points-section {
+  scroll-margin-top: 135px;
 }
+
 @media (max-width: 1024px) {
   .testimonials-section,
   .biography-section,

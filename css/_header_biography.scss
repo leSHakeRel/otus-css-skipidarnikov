@@ -208,8 +208,12 @@ a {
     gap: 32px;
   } */
 
+  .hero-section {
+    margin-bottom: 151px;
+  }
+
   .biography-section {
-    padding: 151px 0px 150px 0px;
+    padding: 0px 0px 150px 0px;
     // margin-left: 138px;
     // margin-right: 138px;
 
@@ -357,6 +361,7 @@ a {
     /* background-position: 0% 100%; */
     /* background-size: 84% 48%; */
     height: 685px;
+    margin-bottom: 81px;
   }
 
   .hero-section__text {
@@ -397,7 +402,7 @@ a {
   }
 
   .biography-section {
-    padding: 81px 0px 80px 0px;
+    padding: 0px 0px 80px 0px;
 
     &__img {
       grid-column: 1 / -1;

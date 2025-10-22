@@ -576,8 +576,11 @@ a {
     justify-content: space-between;
     gap: 32px;
   } */
+  .hero-section {
+    margin-bottom: 151px;
+  }
   .biography-section {
-    padding: 151px 0px 150px 0px;
+    padding: 0px 0px 150px 0px;
   }
   .biography-section__img {
     /* width: 49%; */
@@ -687,6 +690,7 @@ a {
     /* background-position: 0% 100%; */
     /* background-size: 84% 48%; */
     height: 685px;
+    margin-bottom: 81px;
   }
   .hero-section__text {
     width: 100%;
@@ -719,7 +723,7 @@ a {
     font-family: "Playfair Display Regular";
   }
   .biography-section {
-    padding: 81px 0px 80px 0px;
+    padding: 0px 0px 80px 0px;
   }
   .biography-section__img {
     grid-column: 1/-1;

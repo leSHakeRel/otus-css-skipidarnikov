@@ -522,11 +522,11 @@ a {
   }
 }
 
-@media (max-width: vars.$tabletMaxWidth) and (min-width: vars.$mobileMaxWidth) {
+@media (max-width: vars.$tabletMaxWidth) and (min-width: vars.$tabletMinWidth) {
   .biography-section {
     display: grid;
     grid-template-rows: 123px 156px 179px 406px;
-    grid-template-columns: 14px 77% 17% 14px;
+    grid-template-columns: 35px 77% 17% 14px;
     row-gap: 28px;
     justify-content: space-around;
   }
@@ -535,6 +535,9 @@ a {
     background-image: image-set("../img/inside_weather_tablet.png" 1x,
         "../img/inside_weather_tablet@2x.png"
       );
+  }
+  .menu-list.flex {
+    width: 93%;
   }
 }
 

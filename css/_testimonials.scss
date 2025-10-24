@@ -77,7 +77,7 @@
 
     &__article.grid {
       grid-template-columns: 100%;
-      grid-template-rows: 45% 45%;
+      // grid-template-rows: 45% 45%;
     }
 
     &__blockquote,
@@ -89,6 +89,8 @@
       max-width: 74%;
       justify-content: center;
       gap: 42px;
+      margin-top: -4px;
+      padding-bottom: 28px;
     }
 
     &__img-section {

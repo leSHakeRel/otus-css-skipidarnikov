@@ -222,7 +222,6 @@ body {
   }
   .testimonials-section__article.grid {
     grid-template-columns: 100%;
-    grid-template-rows: 45% 45%;
   }
   .testimonials-section__blockquote, .testimonials-section__photo {
     grid-column: 1/-1;
@@ -231,6 +230,8 @@ body {
     max-width: 74%;
     justify-content: center;
     gap: 42px;
+    margin-top: -4px;
+    padding-bottom: 28px;
   }
   .testimonials-section__img-section {
     grid-column: span 5;

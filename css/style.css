@@ -750,6 +750,7 @@ a {
     order: 3;
     max-height: 400px;
     width: 100%;
+    margin-top: 8px;
   }
   .biography-section__head-div {
     /* order: -1; */

@@ -1241,6 +1241,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal[visible=visible] {
+  opacity: 1;
+  visibility: visible;
 }
 
 .callback {
@@ -1421,8 +1428,4 @@ a {
 }
 .callback__plus {
   margin-right: 2px;
-}
-
-.hidden {
-  display: none;
 }/*# sourceMappingURL=style.css.map */

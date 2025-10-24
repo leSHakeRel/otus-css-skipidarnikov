@@ -17,19 +17,19 @@
         <ul class="menu-list gap-55 flex">
           <li class="menu-list__item">
             <a class="link menu-list__link" href="#biography"
-              >B<div class="tablet-hide">iography</div></a>
+              >B<span class="tablet-hide">iography</span></a>
           </li>
           <li class="menu-list__item">
             <a class="link menu-list__link" href="#designers"
-              >D<div class="tablet-hide">esigners</div></a>
+              >D<span class="tablet-hide">esigners</span></a>
           </li>
           <li class="menu-list__item">
             <a class="link menu-list__link" href="#testimonials"
-              >T<div class="tablet-hide">estimonials</div></a>
+              >T<span class="tablet-hide">estimonials</span></a>
           </li>
           <li class="menu-list__item">
             <a class="link menu-list__link" href="#strongPoints"
-              >S<div class="tablet-hide">trong points</div></a>
+              >S<span class="tablet-hide">trong points</span></a>
           </li>
           <li class="menu-list__item">
             <a href="#" class="link menu-list__link contactsButton">
@@ -44,12 +44,12 @@
     <main class="flex column">
       <!--logo-->
       <!--добавить картинку в background секции-->
-      <section class="hero-section flex center">
-        <section class="hero-section__text">
-          <h1 class="hero-section__caption">Mod Studio</h1>
+      <div class="hero-section flex center">
+        <article class="hero-section__text">
+          <h2 class="hero-section__caption">Mod Studio</h2>
           <p class="hero-section__paragraph">Modern Web Studio</p>
-        </section>
-      </section>
+        </article>
+      </div>
       <!--biography-->
       <section class="biography-section container" id="biography">
         <img
@@ -66,7 +66,7 @@
           <span class="tablet-show">-</span>Katya Mills
         </h3>
         <article class="biography-section__label">
-          Art Director
+          <h3 class="biography-section__list-header">Art Director</h3>
           <ul class="biography-section__list">
             <li class="biography-section__item no_bullet">Scenography</li>
             <li class="biography-section__item">Styling</li>
@@ -75,7 +75,7 @@
           </ul>
         </article>
         <div class="biography-section__quote">
-          <hr class="small-line tablet-hide" >
+          <!-- <hr class="small-line tablet-hide" > -->
           <blockquote class="biography-section__blockquote line-height-120">
             “The more I deal with<br class="tablet-show"> the work as something that is my own,<br class="tablet-show"> as
             something that<br class="tablet-show"> is personal, the more successful it is.”
@@ -87,7 +87,7 @@
       <!--designers-->
       <section class="designers-section" id="designers">
         <h2 class="headline container">Designers</h2>
-        <article class="designers-section__article flex gap-20 align-items-end disable-horizontal-scroll container-big">
+        <div class="designers-section__article flex gap-20 align-items-end disable-horizontal-scroll container-big">
           <figure
             class="designer-figure flex column content-flex-end gap-27 min-w-max-content"
           >
@@ -111,12 +111,8 @@
             <figcaption class="designer-figure__caption">
               <p class="designer-figure__text">
                 <span class="designer-figure__text bold">Jess Wonder</span>
-                <br >
-                <span class="designer-figure__text semibold">From/</span> Be
-                more flower
-                <br >
-                <span class="designer-figure__text semibold">Skills/</span>
-                Design Strategy / Marketing
+                <span class="designer-figure__text semibold">From/<span class="designer-figure__subtext"> Be more flower</span></span>                
+                <span class="designer-figure__text semibold">Skills/<span class="designer-figure__subtext">Design Strategy / Marketing</span></span>
               </p>
             </figcaption>
           </figure>
@@ -140,12 +136,8 @@
             <figcaption class="designer-figure__caption_nonfirst">
               <p class="designer-figure__text">
                 <span class="designer-figure__text bold">Kameron Clein</span>
-                <br >
-                <span class="designer-figure__text semibold">From/</span> Be
-                more flower
-                <br >
-                <span class="designer-figure__text semibold">Skills/</span>
-                Design Strategy / Marketing
+                <span class="designer-figure__text semibold">From/<span class="designer-figure__subtext"> Be more flower</span></span>                
+                <span class="designer-figure__text semibold">Skills/<span class="designer-figure__subtext">Design Strategy / Marketing</span></span>
               </p>
             </figcaption>
           </figure>
@@ -160,12 +152,8 @@
             <figcaption class="designer-figure__caption_nonfirst">
               <p class="designer-figure__text">
                 <span class="designer-figure__text bold">LOUISSE RED</span>
-                <br >
-                <span class="designer-figure__text semibold">From/</span> Be
-                more flower
-                <br >
-                <span class="designer-figure__text semibold">Skills/</span>
-                Design Strategy / Marketing
+                <span class="designer-figure__text semibold">From/<span class="designer-figure__subtext"> Be more flower</span></span>                
+                <span class="designer-figure__text semibold">Skills/<span class="designer-figure__subtext">Design Strategy / Marketing</span></span>
               </p>
             </figcaption>
           </figure>
@@ -180,22 +168,18 @@
             <figcaption class="designer-figure__caption_nonfirst">
               <p class="designer-figure__text">
                 <span class="designer-figure__text bold">Kameron Clein</span>
-                <br >
-                <span class="designer-figure__text semibold">From/</span> Be
-                more flower
-                <br >
-                <span class="designer-figure__text semibold">Skills/</span>
-                Design Strategy / Marketing
+                <span class="designer-figure__text semibold">From/<span class="designer-figure__subtext"> Be more flower</span></span>                
+                <span class="designer-figure__text semibold">Skills/<span class="designer-figure__subtext">Design Strategy / Marketing</span></span>
               </p>
             </figcaption>
           </figure>
-        </article>
+        </div>
       </section>
       <!--Testimonials-->
       <section class="testimonials-section container" id="testimonials">
         <div class="testimonials-section__container grid">
-          <section class="testimonials-section__links">
-            <section class="links-section">
+          <div class="testimonials-section__links">
+            <div class="links-section">
               <p class="links-section__item">
                 <a class="link lowercase" href="www.whitepapers.com"
                   >www.whitepapers.com</a>
@@ -211,19 +195,19 @@
                   >www.whitepapers.com</a>
                 <span class="links-section__caption">Creativity</span>
               </p>
-            </section>
-          </section>
-          <section class="testimonials-section__img-section tablet-hide">
+            </div>
+          </div>
+          <div class="testimonials-section__img-section tablet-hide">
             <img
               class="testimonials-section__image"
               src="img/keghan-crossland-ZZxmc66SjfM-unsplash-1.png"
               alt="Testimonials photo"
             >
-          </section>
+          </div>
           <h2 class="testimonials-section__headline headline">Testimonials</h2>
 
           <div class="testimonials-section__data">
-            <article class="testimonials-section__article grid">
+            <div class="testimonials-section__article grid">
               <blockquote class="testimonials-section__blockquote">
                 I just really want<br class="tablet-show mobile-hide"> to do good work and work<br class="tablet-show"> with some great
                 people, people who challenge<br class="tablet-show"> me.
@@ -233,7 +217,7 @@
                 src="img/sinitta-leunen-YaReHIzNdRw-unsplash-1.png"
                 alt="Testimonials smart idea photo"
               >
-            </article>
+            </div>
           </div>
         </div>
       </section>
@@ -280,20 +264,14 @@
       </section>
     </main>
     <footer class="footer flex">
-      <section class="footer__contact">
-        <address class="footer__address flex column">
-          <a class="link underline phone" href="tel:+79211234567"
-            >+7 921 123-45-67</a>
-          <a class="link underline upper-case" href="mailto:info@modstudio.com"
-            >info@modstudio.com</a>
-        </address>
-      </section>
-      <section class="footer__text">
-        <p>A product of <span class="footer__span">MOD</span></p>
-      </section>
-      <section class="footer__copyright">
-        <p>© 2023 Mod Media. All rights reserved</p>
-      </section>
+      <address class="footer__contact footer__address flex column">
+        <a class="link underline phone" href="tel:+79211234567"
+          >+7 921 123-45-67</a>
+        <a class="link underline upper-case" href="mailto:info@modstudio.com"
+          >info@modstudio.com</a>
+      </address>
+      <p class="footer__text">A product of <span class="footer__span">MOD</span></p>
+      <p class="footer__copyright">© 2023 Mod Media. All rights reserved</p>
     </footer>
     <div class="modal hidden" id="modal">
       <form class="callback" method="get" id="callback">

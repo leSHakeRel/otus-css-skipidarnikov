@@ -400,13 +400,15 @@ a {
 .footer__address:hover,
 .footer,
 .link.lowercase,
-.designer-figure__text {
+.designer-figure__text,
+.designer-figure__subtext {
   font-family: "Roboto Regular";
   line-height: 100%;
   letter-spacing: 0;
 }
 
 .biography-section__label,
+.biography-section__list-header,
 .hero-section__paragraph,
 .footer__text {
   font-family: "Roboto Medium";
@@ -455,7 +457,8 @@ a {
   font-size: 86px;
 }
 
-.biography-section__label {
+.biography-section__label,
+.biography-section__list-header {
   font-size: 18px;
 }
 
@@ -555,8 +558,9 @@ a {
   .hero-section {
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 630px;
     align-items: center;
+    padding-bottom: 136px;
+    padding-top: 137px;
   }
   .hero-section__text {
     padding: 110px 20px;
@@ -605,12 +609,21 @@ a {
   .biography-section__label {
     grid-column: 3/4;
     grid-row: 3/4;
+    position: relative;
+  }
+  .biography-section__label::after {
+    content: "";
+    width: 20px;
+    height: 6px;
+    background-color: #0D0D0D;
+    position: absolute;
+    bottom: -5px;
   }
   .biography-section__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 12px;
   }
   .biography-section__list, .biography-section__item {
     list-style-position: outside;
@@ -689,12 +702,18 @@ a {
     background-repeat: repeat;
     /* background-position: 0% 100%; */
     /* background-size: 84% 48%; */
-    height: 685px;
+    min-height: 685px;
     margin-bottom: 81px;
+    display: grid;
+    grid-template-rows: 45% 55%;
+    justify-content: normal;
   }
   .hero-section__text {
     width: 100%;
-    height: 45%;
+    margin-top: 0px;
+    padding-bottom: 103px;
+    padding-top: 77px;
+    margin-bottom: 2px;
   }
   .tablet-hide {
     display: none;
@@ -791,7 +810,6 @@ a {
   }
   .hero-section__caption {
     font-size: 70px;
-    margin-top: -24px;
   }
   .hero-section__paragraph {
     font-size: 18px;
@@ -883,6 +901,7 @@ a {
   font-weight: 300;
   max-width: 81%;
   letter-spacing: 0px;
+  padding-top: 23px;
 }
 .biography-section__label {
   letter-spacing: -0.1px;
@@ -901,7 +920,7 @@ a {
 }
 @media (max-width: 768px) {
   .menu-list.flex {
-    width: 81%;
+    width: 80%;
   }
   .biography-section__blockquote.line-height-120 {
     margin-right: 0px;
@@ -928,12 +947,15 @@ a {
   animation: pulse-img 0.8s ease-in-out 1 both;
 }
 
-.designer-figure__text {
+.designer-figure__text, .designer-figure__subtext {
   font-size: 16px;
   line-height: 117%;
 }
 .designer-figure__text.bold, .designer-figure__text.semibold {
   font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
 }
 .designer-figure__text.bold {
   text-transform: uppercase;
@@ -1090,7 +1112,7 @@ a {
     }
   }
   .strong-points-section {
-    margin-bottom: 80px;
+    margin-bottom: 84px;
     padding-left: 17px;
   }
   .strong-points-section__strengths {

@@ -17,7 +17,8 @@
 }
 
 .designer-figure {
-  &__text {
+  &__text,
+  &__subtext {
     font-size: 16px;
     line-height: 117%;
   }
@@ -25,6 +26,9 @@
   &__text.bold,
   &__text.semibold {
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
   }
 
   &__text.bold {

@@ -271,7 +271,7 @@ body {
   .testimonials-section__container {
     /* padding: 0 119px; */
     /* grid-template-columns: repeat(12, 1fr); */
-    grid-template-rows: 21px 330px 35px; /*repeat(3, 1fr);*/
+    grid-template-rows: 21px minmax(330px, auto) 35px; /*repeat(3, 1fr);*/
   }
   .links-section {
     display: flex;

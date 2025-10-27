@@ -167,7 +167,7 @@ a {
     display: grid;
     // grid-template-rows: 19% 26% 7% 33%;
     // grid-template-rows: 22.5% 30% 9% 21.5% 17%;
-    grid-template-rows: 22.5% 30% 9% auto;
+    grid-template-rows: 22.5% 30% minmax(9%, 0.5fr) 1fr;
     grid-template-columns: 49% 12% 39%;
   }
 

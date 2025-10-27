@@ -21,18 +21,31 @@
   &__subtext {
     font-size: 16px;
     line-height: 117%;
+    margin-left: 5px;
   }
 
   &__text.bold,
   &__text.semibold {
     font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
+    display: block;
+    margin-left: 0px;
+    // display: flex;
+    // flex-direction: row;
+    // gap: 3px;
   }
 
   &__text.bold {
     text-transform: uppercase;
+  }
+
+  &__caption {
+    // width: 45%;
+    width: 253px;
+  }
+
+  &__caption_nonfirst,
+  &__caption {
+    margin-top: 27px;
   }
 }
 
@@ -55,7 +68,8 @@
 
     &__caption {
       align-self: flex-end;
-      padding-right: 81px;
+      // padding-right: 81px;
+      margin-left: 279px;
     }
 
     &__caption_nonfirst {

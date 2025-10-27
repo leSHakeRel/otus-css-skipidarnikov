@@ -264,7 +264,7 @@
     }
 
     &__article.grid {
-      grid-template-rows: 34% 63%;
+      grid-template-rows: auto 63%;
       gap: 20px;
     }
 
@@ -275,7 +275,7 @@
 
     &__container {
       /* grid-template-rows: 21px 1fr 103px; */
-      grid-template-rows: 3% 77% 15%;
+      grid-template-rows: 3% auto 15%;
     }
 
     &__headline.headline {

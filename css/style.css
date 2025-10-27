@@ -362,7 +362,7 @@ body {
     margin-left: 3px;
   }
   .testimonials-section__article.grid {
-    grid-template-rows: 34% 63%;
+    grid-template-rows: auto 63%;
     gap: 20px;
   }
   .testimonials-section__photo {
@@ -371,7 +371,7 @@ body {
   }
   .testimonials-section__container {
     /* grid-template-rows: 21px 1fr 103px; */
-    grid-template-rows: 3% 77% 15%;
+    grid-template-rows: 3% auto 15%;
   }
   .testimonials-section__headline.headline {
     padding-right: 4px;

@@ -151,9 +151,18 @@
   }
 }
 
+@media (min-width: vars.$tabletMinWidth) and (max-width: vars.$tabletMaxWidth) {
+  .testimonials-section {
+    &__data {
+      grid-row: 2 / 3;
+      margin-left: 15px;
+    }
+  }
+}
+
 @media (max-width: vars.$tabletMaxWidth) {
   .testimonials-section {
-    margin: 3px 16px 80px 31px;
+    margin: 3px 16px 80px 15px;
 
     &__headline.headline {
       order: -1;
@@ -218,6 +227,11 @@
     &__photo {
       max-width: 336px;
       min-height: 330px;
+      margin-left: -15px;
+    }
+
+    &__data {
+      margin-left: 0px;
     }
   }
 }

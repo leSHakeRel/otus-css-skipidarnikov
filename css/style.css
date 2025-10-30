@@ -838,6 +838,29 @@ a {
   .hero-section {
     background-image: -webkit-image-set(url("../img/inside_weather_mobile.png") 1x, "../img/inside_weather_mobile@2x.png");
     background-image: image-set("../img/inside_weather_mobile.png" 1x, "../img/inside_weather_mobile@2x.png");
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero-section__text {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 50%;
+    padding: 84px 0 103px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+  .hero-section__caption {
+    width: 100%;
+    min-width: 100%;
+  }
+  .hero-section__paragraph {
+    text-align: center;
   }
   .biography-section {
     display: grid;

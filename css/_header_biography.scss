@@ -544,11 +544,38 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: vars.$mobileMaxWidth) {
   .hero-section {
     background-image: image-set("../img/inside_weather_mobile.png" 1x,
         "../img/inside_weather_mobile@2x.png"
       );
+
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__text {
+      height: 50%;
+      width: 100%;
+      margin-bottom: 50%;
+      padding: 84px 0 103px;
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      text-align: center;
+    }
+
+    &__caption {
+      width: 100%;
+      min-width: 100%;
+    }
+
+    &__paragraph {
+      text-align: center;
+    }
   }
 
   .biography-section {

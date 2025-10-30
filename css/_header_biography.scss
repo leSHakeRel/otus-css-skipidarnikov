@@ -167,7 +167,7 @@ a {
     display: grid;
     // grid-template-rows: 19% 26% 7% 33%;
     // grid-template-rows: 22.5% 30% 9% 21.5% 17%;
-    grid-template-rows: 22.5% 30% minmax(9%, 0.5fr) 1fr;
+    grid-template-rows: minmax(22.5%,1fr) minmax(30%, 1fr) minmax(9%, 1fr) 1fr;
     grid-template-columns: 49% 12% 39%;
   }
 
@@ -260,7 +260,7 @@ a {
       height: 6px;
       background-color: #0D0D0D;
       position: absolute;
-      bottom: -5px;
+      bottom: 120px;
     }
 
     &__list {
@@ -295,6 +295,7 @@ a {
       gap: 18px;
       grid-column: 3 / 4;
       grid-row: 4 / -1;
+      margin-top: -125px;
     }
 
     &__blockquote {
@@ -391,7 +392,7 @@ a {
     // height: 45%;
     margin-top: 0px;
     padding-bottom: 103px;
-    padding-top: 77px;
+    padding-top: 83px;
     margin-bottom: 2px;
   }
 
@@ -497,6 +498,7 @@ a {
 
     &__head-div {
       justify-self: end;
+      margin-right: 92px;
       /* grid-column: -1 / 1; */
     }
 
@@ -528,7 +530,8 @@ a {
 @media (max-width: vars.$tabletMaxWidth) and (min-width: vars.$tabletMinWidth) {
   .biography-section {
     display: grid;
-    grid-template-rows: 123px 156px 179px 406px;
+    // grid-template-rows: 123px 156px 179px 406px;
+    grid-template-rows: minmax(123px, 0.1fr) minmax(156px, 1fr) 179px 406px;
     grid-template-columns: 35px 77% 17% 14px;
     row-gap: 28px;
     justify-content: space-around;
@@ -580,7 +583,8 @@ a {
 
   .biography-section {
     display: grid;
-    grid-template-rows: 124px 228px 111px 407px;
+    grid-template-rows: minmax(124px, 0.2fr) minmax(227px, 0.9fr) 111px 407px;
+    // grid-template-rows: 124px 228px 111px 407px;
     grid-template-columns: 18px 73% 19% 16px;
     row-gap: 28px;
     justify-content: space-around;
@@ -698,6 +702,10 @@ a {
     &__label {
       padding-top: 1px;
       padding-left: 5px;
+    }
+
+    &__head-div {
+      margin-right: 0px;
     }
   }
 }

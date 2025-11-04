@@ -553,7 +553,7 @@ a {
   }
   .biography-section {
     display: grid;
-    grid-template-rows: minmax(22.5%, 1fr) minmax(30%, 1fr) minmax(9%, 1fr) 1fr;
+    grid-template-rows: minmax(min-content, 21%) minmax(min-content, 32%) minmax(12%, min-content) min-content;
     grid-template-columns: 49% 12% 39%;
   }
   .hero-section {
@@ -627,7 +627,7 @@ a {
     height: 6px;
     background-color: #0D0D0D;
     position: absolute;
-    bottom: 120px;
+    bottom: 27px;
   }
   .biography-section__list {
     display: flex;
@@ -653,7 +653,7 @@ a {
     gap: 18px;
     grid-column: 3/4;
     grid-row: 4/-1;
-    margin-top: -125px;
+    margin-top: -20px;
   }
   .biography-section__blockquote {
     font-size: 29px;
